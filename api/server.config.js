@@ -18,6 +18,6 @@ const config = {
   logger: {
     level: process.env.NODE_ENV === 'development' ? 'debug' : 'warn',
   },
-}
+};
 
-module.exports = config
+module.exports = config;
