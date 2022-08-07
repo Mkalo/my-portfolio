@@ -8064,6 +8064,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-react-remove-properties@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "babel-plugin-react-remove-properties@npm:0.3.0"
+  checksum: 4ab87c4a40c35f8caf02e5d824d9bfc767deae4af129523ca2695e8e969fb27b45466b9593b1098dc87791aa1762181c1e2d953f2995a42b5abd52faa24ab04a
+  languageName: node
+  linkType: hard
+
 "babel-plugin-syntax-trailing-function-commas@npm:^7.0.0-beta.0":
   version: 7.0.0-beta.0
   resolution: "babel-plugin-syntax-trailing-function-commas@npm:7.0.0-beta.0"
@@ -23926,6 +23933,7 @@ __metadata:
     "@redwoodjs/router": 2.2.0
     "@redwoodjs/web": 2.2.0
     autoprefixer: ^10.4.8
+    babel-plugin-react-remove-properties: ^0.3.0
     postcss: ^8.4.16
     postcss-loader: ^7.0.1
     prop-types: 15.8.1

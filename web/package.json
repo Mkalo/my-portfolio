@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "babel-plugin-react-remove-properties": "^0.3.0",
     "postcss": "^8.4.16",
     "postcss-loader": "^7.0.1",
     "sass": "^1.54.3",
