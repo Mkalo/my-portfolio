@@ -7,6 +7,7 @@ import FatalErrorPage from 'src/pages/FatalErrorPage';
 import Routes from 'src/Routes';
 
 import './index.scss';
+import './i18n/config';
 
 const App = () => {
   useLayoutEffect(() => {
