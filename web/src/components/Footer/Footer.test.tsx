@@ -1,6 +1,6 @@
-import { render } from '@redwoodjs/testing/web'
+import { render } from 'src/testing';
 
-import Footer from './Footer'
+import Footer from './Footer';
 
 //   Improve this test with help from the Redwood Testing Doc:
 //    https://redwoodjs.com/docs/testing#testing-components
@@ -8,7 +8,7 @@ import Footer from './Footer'
 describe('Footer', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Footer />)
-    }).not.toThrow()
-  })
-})
+      render(<Footer />);
+    }).not.toThrow();
+  });
+});

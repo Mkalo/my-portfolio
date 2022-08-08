@@ -1,4 +1,4 @@
-import { render } from '@redwoodjs/testing/web';
+import { render } from 'src/testing';
 
 import PortfolioLayout from './PortfolioLayout';
 
