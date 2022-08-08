@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <h2>{'Footer'}</h2>;
+  return <div className="tw-sticky tw-top-[100vh]">{'Footer'}</div>;
 };
 
 export default Footer;

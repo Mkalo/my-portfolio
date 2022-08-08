@@ -22,3 +22,9 @@
 html.tw-dark > body {
   @apply tw-bg-zinc-800 tw-text-zinc-100;
 }
+
+html, body, #redwood-app {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
