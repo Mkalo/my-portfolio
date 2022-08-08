@@ -11,7 +11,7 @@
   html {
     font-family: 'Inter', sans-serif;
     > body {
-      @apply tw-bg-zinc-100 tw-text-zinc-800;
+      @apply bg-zinc-100 text-zinc-800;
     }
   }
 }
@@ -19,8 +19,8 @@
 /**
  * Dark mode style for background and text color
  */
-html.tw-dark > body {
-  @apply tw-bg-zinc-800 tw-text-zinc-100;
+html.dark > body {
+  @apply bg-zinc-800 text-zinc-100;
 }
 
 html, body, #redwood-app {
