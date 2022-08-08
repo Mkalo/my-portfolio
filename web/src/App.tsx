@@ -1,5 +1,7 @@
 import { useLayoutEffect } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import { FatalErrorBoundary, RedwoodProvider } from '@redwoodjs/web';
 import { RedwoodApolloProvider } from '@redwoodjs/web/apollo';
 
@@ -10,6 +12,8 @@ import './index.scss';
 import './i18n/config';
 
 const App = () => {
+  const { t } = useTranslation();
+
   useLayoutEffect(() => {
     // add dark mode class to html if set in localStorage or match OS preference
     const theme = localStorage.getItem('theme');
@@ -25,7 +29,7 @@ const App = () => {
 
   return (
     <FatalErrorBoundary page={FatalErrorPage}>
-      <RedwoodProvider titleTemplate="%PageTitle | %AppTitle">
+      <RedwoodProvider titleTemplate={`%PageTitle | ${t('app_title')}`}>
         <RedwoodApolloProvider>
           <Routes />
         </RedwoodApolloProvider>
