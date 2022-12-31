@@ -6,7 +6,7 @@ const Routes = () => {
   return (
     <Router>
       <Set wrap={PortfolioLayout}>
-        <Route path="/" page={HomePage} name="home" />
+        <Route path="/" page={HomePage} name="home" prerender />
       </Set>
       <Route notfound page={NotFoundPage} />
     </Router>

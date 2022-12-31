@@ -9,9 +9,9 @@ const Header = () => {
     <nav className="border-b border-gray-400 px-2 py-2.5">
       <div className="container flex items-center">
         <img src={logo} alt="logo" className="mr-3 h-8 w-8" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold">
+        <h1 className="self-center whitespace-nowrap text-xl font-semibold">
           {t('app_title')}
-        </span>
+        </h1>
       </div>
     </nav>
   );

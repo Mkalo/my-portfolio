@@ -9,7 +9,10 @@ export * from '@redwoodjs/testing/web';
 
 import i18n from '../i18n/config';
 
-const customRenderer = (ui: React.ReactElement, options?: {}): RenderResult => {
+const customRenderer = (
+  ui: React.ReactElement,
+  options?: object
+): RenderResult => {
   return render(ui, {
     wrapper: (props) => (
       <I18nextProvider i18n={i18n}>
