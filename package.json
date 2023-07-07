@@ -9,8 +9,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@redwoodjs/core": "^5.4.2",
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "@redwoodjs/core": "^5.4.2"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
@@ -23,9 +22,5 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.6.1",
-  "dependencies": {
-    "@ionic/react": "^7.1.2",
-    "ionicons": "^7.1.2"
-  }
+  "packageManager": "yarn@3.6.1"
 }

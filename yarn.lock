@@ -3565,31 +3565,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/core@npm:7.1.2":
-  version: 7.1.2
-  resolution: "@ionic/core@npm:7.1.2"
-  dependencies:
-    "@stencil/core": ^3.4.1
-    ionicons: 7.1.0
-    tslib: ^2.1.0
-  checksum: 4db2088f414d527ddd657f7d187a9396ec2e285a78df5fed432d9f2f5d8560951b4109236612b636b0df2fbdf4241ecdbc9747951d025c0270eda0021c3cb7b4
-  languageName: node
-  linkType: hard
-
-"@ionic/react@npm:^7.1.2":
-  version: 7.1.2
-  resolution: "@ionic/react@npm:7.1.2"
-  dependencies:
-    "@ionic/core": 7.1.2
-    ionicons: ^7.0.0
-    tslib: "*"
-  peerDependencies:
-    react: ">=16.8.6"
-    react-dom: ">=16.8.6"
-  checksum: 6a9d4abc07e5db13b2c736b233573f7b53ebee4cc8032e4782049f53f34689c27fa83ea81a37cd81a44a78b312e3beeceaa0ac2dce20d26e8cfa08d944b2d573
-  languageName: node
-  linkType: hard
-
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -5216,24 +5191,6 @@ __metadata:
   dependencies:
     "@sinonjs/commons": ^3.0.0
   checksum: 2e2fb6cc57f227912814085b7b01fede050cd4746ea8d49a1e44d5a0e56a804663b0340ae2f11af7559ea9bf4d087a11f2f646197a660ea3cb04e19efc04aa63
-  languageName: node
-  linkType: hard
-
-"@stencil/core@npm:^2.18.0":
-  version: 2.22.3
-  resolution: "@stencil/core@npm:2.22.3"
-  bin:
-    stencil: bin/stencil
-  checksum: 6df88e165ec0cf132b1dbdb71d61399359974c7533a20b5e2bcee5f9ab4495a63dff5cbb4b2687639ee711c91ef36ac55af45e613464e4f904ce346f490b04dc
-  languageName: node
-  linkType: hard
-
-"@stencil/core@npm:^3.4.1":
-  version: 3.4.1
-  resolution: "@stencil/core@npm:3.4.1"
-  bin:
-    stencil: bin/stencil
-  checksum: 9ee155e7010e5fb116d95cb368894d1854aae318212b6915129e51487b19eba923de85d9b60d23f32cf21ca580994e71fbd6ae62ec1dc4065340607fb10313c5
   languageName: node
   linkType: hard
 
@@ -15620,24 +15577,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ionicons@npm:7.1.0":
-  version: 7.1.0
-  resolution: "ionicons@npm:7.1.0"
-  dependencies:
-    "@stencil/core": ^2.18.0
-  checksum: 0410624b8ff80be67ccab7a73d0985d087b4cb3f2b89bb9a0e42cbf80e5a68dbcd8a38fa18dc4b69b3b6219e9f6bb095b5c8949c996b3dabf1ea7aa1e0bcbabe
-  languageName: node
-  linkType: hard
-
-"ionicons@npm:^7.0.0, ionicons@npm:^7.1.2":
-  version: 7.1.2
-  resolution: "ionicons@npm:7.1.2"
-  dependencies:
-    "@stencil/core": ^2.18.0
-  checksum: 9779f77cc3cb734bdc782167439e79f09b268c479f79d3fc81122c01c323a7bb16064a2ccbdb65bf4caf9037fe08751738721abc7b2a57634b52789a0079b138
-  languageName: node
-  linkType: hard
-
 "ip@npm:^2.0.0":
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
@@ -20570,12 +20509,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-tailwindcss@npm:^0.1.13":
-  version: 0.1.13
-  resolution: "prettier-plugin-tailwindcss@npm:0.1.13"
+"prettier-plugin-tailwindcss@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "prettier-plugin-tailwindcss@npm:0.3.0"
   peerDependencies:
+    "@ianvs/prettier-plugin-sort-imports": "*"
+    "@prettier/plugin-pug": "*"
+    "@shopify/prettier-plugin-liquid": "*"
+    "@shufo/prettier-plugin-blade": "*"
+    "@trivago/prettier-plugin-sort-imports": "*"
     prettier: ">=2.2.0"
-  checksum: 4c86acd69b00c7fe4f98aa25ea4145cc665b4a62c0522752950e91b6a9aab2cf8a37934c39eec3505424fcfa5ca443119aae4f01c17c92655dd76eb7665f8825
+    prettier-plugin-astro: "*"
+    prettier-plugin-css-order: "*"
+    prettier-plugin-import-sort: "*"
+    prettier-plugin-jsdoc: "*"
+    prettier-plugin-marko: "*"
+    prettier-plugin-organize-attributes: "*"
+    prettier-plugin-organize-imports: "*"
+    prettier-plugin-style-order: "*"
+    prettier-plugin-svelte: "*"
+    prettier-plugin-twig-melody: "*"
+  peerDependenciesMeta:
+    "@ianvs/prettier-plugin-sort-imports":
+      optional: true
+    "@prettier/plugin-pug":
+      optional: true
+    "@shopify/prettier-plugin-liquid":
+      optional: true
+    "@shufo/prettier-plugin-blade":
+      optional: true
+    "@trivago/prettier-plugin-sort-imports":
+      optional: true
+    prettier-plugin-astro:
+      optional: true
+    prettier-plugin-css-order:
+      optional: true
+    prettier-plugin-import-sort:
+      optional: true
+    prettier-plugin-jsdoc:
+      optional: true
+    prettier-plugin-marko:
+      optional: true
+    prettier-plugin-organize-attributes:
+      optional: true
+    prettier-plugin-organize-imports:
+      optional: true
+    prettier-plugin-style-order:
+      optional: true
+    prettier-plugin-svelte:
+      optional: true
+    prettier-plugin-twig-melody:
+      optional: true
+  checksum: b7c4470097c1c4a9b280fcd89b6853a7afef07dc9596393b6cf90141abdd25bceb5222133aed4b4cd64c1849c09ae446eb54bf560214f5e309a9fbf8ce5af08c
   languageName: node
   linkType: hard
 
@@ -21947,10 +21932,7 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@babel/plugin-proposal-private-property-in-object": ^7.21.11
-    "@ionic/react": ^7.1.2
     "@redwoodjs/core": ^5.4.2
-    ionicons: ^7.1.2
-    prettier-plugin-tailwindcss: ^0.1.13
   languageName: unknown
   linkType: soft
 
@@ -24156,17 +24138,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:*, tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1, tslib@npm:^2.4.0, tslib@npm:^2.5.0":
-  version: 2.6.0
-  resolution: "tslib@npm:2.6.0"
-  checksum: 8d18020a8b9e70ecc529a744c883c095f177805efdbc9786bd50bd82a46c17547923133c5444fbcaf1f7f1c44e0e29c89f73ecf6d8fd1039668024a073a81dc6
-  languageName: node
-  linkType: hard
-
 "tslib@npm:^1.8.1, tslib@npm:^1.9.2":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: 69ae09c49eea644bc5ebe1bca4fa4cc2c82b7b3e02f43b84bd891504edf66dbc6b2ec0eef31a957042de2269139e4acff911e6d186a258fb14069cd7f6febce2
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.0.0, tslib@npm:^2.0.1, tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.3.0, tslib@npm:^2.3.1, tslib@npm:^2.4.0, tslib@npm:^2.5.0":
+  version: 2.6.0
+  resolution: "tslib@npm:2.6.0"
+  checksum: 8d18020a8b9e70ecc529a744c883c095f177805efdbc9786bd50bd82a46c17547923133c5444fbcaf1f7f1c44e0e29c89f73ecf6d8fd1039668024a073a81dc6
   languageName: node
   linkType: hard
 
@@ -25103,6 +25085,7 @@ __metadata:
     i18next-browser-languagedetector: ^6.1.4
     postcss: ^8.4.16
     postcss-loader: ^7.0.1
+    prettier-plugin-tailwindcss: ^0.3.0
     prop-types: 15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
