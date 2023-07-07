@@ -33,13 +33,13 @@ const Resume = ({
   const { t } = useTranslation();
 
   return (
-    <main>
+    <article>
       <header className="flex flex-col gap-8 sm:flex-row sm:gap-16">
         <div className="flex justify-center">
           <ProfilePicture src={ProfileImage} />
         </div>
         <hgroup className="flex flex-col">
-          <h1 className="text-2xl font-semibold">{name}</h1>
+          <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
           <p>{description}</p>
         </hgroup>
@@ -101,7 +101,7 @@ const Resume = ({
         </div>
         <p>TODO</p>
       </section>
-    </main>
+    </article>
   );
 };
 
