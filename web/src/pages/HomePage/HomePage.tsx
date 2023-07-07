@@ -7,6 +7,10 @@ import Resume from 'src/components/Resume/Resume';
 const HomePage = () => {
   const { t } = useTranslation();
 
+  const expert = t('expert');
+  const intermediate = t('intermediate');
+  const basic = t('basic');
+
   return (
     <>
       <MetaTags title="Home" description="Home page" />
@@ -15,26 +19,21 @@ const HomePage = () => {
           <Resume
             name="Matheus Costa"
             position={t('position')}
-            description="Software Engineer with 7 years of experience, focused on web
-            development. Skilled in Node.js, Typescript, Lua, Vue.js, Vuex, C++,
-            React, MySQL, Python. A self-driven and ambitious individual,
-            seeking an opportunity to use creativity and problem-solving skills
-            to design, develop and improve systems and software to bring about
-            growth and sustainability."
+            description={t('description')}
             yearsOfExperience={7}
             technicalSkills={[
-              { name: 'Node.js', years: 7, level: 'Expert' },
-              { name: 'Typescript', years: 5, level: 'Expert' },
-              { name: 'Javascript', years: 5, level: 'Expert' },
-              { name: 'HTML', years: 5, level: 'Expert' },
-              { name: 'CSS', years: 5, level: 'Expert' },
-              { name: 'React', years: 3, level: 'Expert' },
-              { name: 'C++', years: 3, level: 'Intermediate' },
-              { name: 'Lua', years: 3, level: 'Intermediate' },
-              { name: 'Vue.js', years: 2, level: 'Intermediate' },
-              { name: 'Python', years: 1, level: 'Intermediate' },
-              { name: 'PHP', years: 1, level: 'Beginner' },
-              { name: 'Angular', years: 1, level: 'Beginner' },
+              { name: 'Node.js', years: 7, level: expert },
+              { name: 'Typescript', years: 5, level: expert },
+              { name: 'Javascript', years: 5, level: expert },
+              { name: 'HTML', years: 5, level: expert },
+              { name: 'CSS', years: 5, level: expert },
+              { name: 'React', years: 3, level: expert },
+              { name: 'C++', years: 3, level: intermediate },
+              { name: 'Lua', years: 3, level: intermediate },
+              { name: 'Vue.js', years: 2, level: intermediate },
+              { name: 'Python', years: 1, level: intermediate },
+              { name: 'PHP', years: 1, level: basic },
+              { name: 'Angular', years: 1, level: basic },
             ]}
             additionalSkills={[
               'AWS',
@@ -44,6 +43,8 @@ const HomePage = () => {
               'PostgreSQL',
               'MongoDB',
               'Prisma',
+              'Sass',
+              'Tailwind',
               'Jest',
               'Cypress',
               'Puppeteer',
@@ -64,7 +65,6 @@ const HomePage = () => {
               'Express.js',
               'Next.js',
               'Protobuf',
-              'Sass',
             ]}
           />
         </div>

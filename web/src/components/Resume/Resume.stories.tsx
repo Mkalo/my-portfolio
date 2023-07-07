@@ -25,7 +25,7 @@ export default {
   args: {
     name: 'Matheus Costa',
     position: 'Senior Software Engineer',
-    description: `Software Engineer with 7 years of experience, focused on web development. Skilled in Node.js, Typescript, Lua, Vue.js, Vuex, C++, React, MySQL, Python. A self-driven and ambitious individual, seeking an opportunity to use creativity and problem-solving skills to design, develop and improve systems and software to bring about growth and sustainability.`,
+    description: `Software Engineer with 7 years of experience, focused on web development. Skilled in Node.js, Typescript, React, Vue.js, Lua and C++. A self-driven and ambitious individual, seeking an opportunity to use creativity and problem-solving skills to design, develop and improve systems and software to bring about growth and sustainability.`,
     yearsOfExperience: 7,
     technicalSkills: [
       { name: 'Node.js', years: 7, level: 'Expert' },
