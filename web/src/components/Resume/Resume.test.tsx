@@ -8,7 +8,16 @@ import Resume from './Resume';
 describe('Resume', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<Resume />);
+      render(
+        <Resume
+          name="Makino"
+          position={'Some random position'}
+          description="Test description"
+          yearsOfExperience={1}
+          technicalSkills={[{ name: 'Node.js', years: 3, level: 'Expert' }]}
+          additionalSkills={['AWS', 'Git', 'Docker']}
+        />
+      );
     }).not.toThrow();
   });
 });
