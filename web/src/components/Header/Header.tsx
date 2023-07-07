@@ -24,7 +24,7 @@ const Header = () => {
   }, [theme]);
 
   return (
-    <nav className="flex justify-between border-b border-gray-400 px-5 py-2.5">
+    <nav className="mb-4 flex justify-between border-b border-gray-400 px-5 py-2.5">
       <div className="container flex items-center">
         <img src={logo} alt="logo" className="mr-3 h-8 w-8" />
         <h1 className="self-center whitespace-nowrap text-xl font-semibold">

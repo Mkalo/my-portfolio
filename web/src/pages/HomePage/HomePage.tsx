@@ -15,7 +15,7 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
       <div className="flex items-center">
-        <div className="mx-auto max-w-[950px] p-5">
+        <div className="mx-auto max-w-[950px] rounded p-5 shadow-[0_1px_9px_#e8e8e8] dark:shadow-[0_1px_9px_#1a1a1a]">
           <Resume
             name="Matheus Costa"
             position={t('position')}
