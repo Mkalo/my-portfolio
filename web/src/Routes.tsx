@@ -5,7 +5,7 @@ import PortfolioLayout from './layouts/PortfolioLayout/PortfolioLayout';
 const Routes = () => {
   return (
     <Router>
-      <Route path="/resume" page={ResumePage} name="resume" />
+      <Route path="/resume" page={ResumePage} name="resume" prerender />
       <Set wrap={PortfolioLayout}>
         <Route path="/" page={HomePage} name="home" prerender />
       </Set>
