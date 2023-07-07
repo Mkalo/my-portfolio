@@ -20,8 +20,9 @@
         "../api/src/*",
         "../.redwood/types/mirror/api/src/*"
       ],
+      "@public/*": ["./public/*"],
       "types/*": ["./types/*", "../types/*"],
-      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/web"]
+      "@redwoodjs/testing": ["../node_modules/@redwoodjs/testing/web"],
     },
     "typeRoots": ["../node_modules/@types", "./node_modules/@types"],
     "types": ["jest", "@testing-library/jest-dom"],
@@ -29,6 +30,7 @@
   },
   "include": [
     "src",
+    "public",
     "../.redwood/types/includes/all-*",
     "../.redwood/types/includes/web-*",
     "../types",

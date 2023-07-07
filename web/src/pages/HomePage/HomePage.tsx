@@ -1,14 +1,16 @@
-import { useTranslation } from 'react-i18next';
-
 import { MetaTags } from '@redwoodjs/web';
 
-const HomePage = () => {
-  const { t } = useTranslation();
+import Resume from 'src/components/Resume/Resume';
 
+const HomePage = () => {
   return (
     <>
       <MetaTags title="Home" description="Home page" />
-      <h1>{t('hello_world')}</h1>
+      <div className="flex items-center">
+        <div className="mx-auto max-w-[950px] pt-4">
+          <Resume />
+        </div>
+      </div>
     </>
   );
 };
