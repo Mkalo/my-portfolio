@@ -8,6 +8,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@redwoodjs/core": "^5.4.2",
     "prettier-plugin-tailwindcss": "^0.1.13"
   },
