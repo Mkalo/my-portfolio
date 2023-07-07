@@ -6,7 +6,7 @@ import { useTheme } from 'src/hooks/useTheme';
 import MoonOutline from 'src/images/moon-outline.svg';
 import SunnyOutline from 'src/images/sunny-outline.svg';
 
-import logo from './logo.png';
+import logo from './logo.webp';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();

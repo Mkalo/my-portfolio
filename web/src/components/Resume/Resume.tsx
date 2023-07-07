@@ -1,7 +1,7 @@
 import BriefcaseOutline from 'src/images/briefcase-outline.svg';
 import CalendarOutline from 'src/images/calendar-outline.svg';
 import LibraryOutline from 'src/images/library-outline.svg';
-import ProfileImage from 'src/images/profile.png';
+import ProfileImage from 'src/images/profile.webp';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
 
