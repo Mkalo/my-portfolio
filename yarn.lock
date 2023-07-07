@@ -21933,6 +21933,7 @@ __metadata:
   dependencies:
     "@babel/plugin-proposal-private-property-in-object": ^7.21.11
     "@redwoodjs/core": ^5.4.2
+    prettier-plugin-tailwindcss: ^0.3.0
   languageName: unknown
   linkType: soft
 
@@ -25085,7 +25086,6 @@ __metadata:
     i18next-browser-languagedetector: ^6.1.4
     postcss: ^8.4.16
     postcss-loader: ^7.0.1
-    prettier-plugin-tailwindcss: ^0.3.0
     prop-types: 15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
