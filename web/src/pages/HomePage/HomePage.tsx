@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
       <div className="flex items-center">
-        <div className="mx-auto max-w-[950px] pt-4">
+        <div className="mx-auto max-w-[950px] p-5">
           <Resume />
         </div>
       </div>
