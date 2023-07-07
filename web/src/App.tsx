@@ -14,19 +14,6 @@ import './i18n/config';
 const App = () => {
   const { t } = useTranslation();
 
-  useLayoutEffect(() => {
-    // add dark mode class to html if set in localStorage or match OS preference
-    const theme = localStorage.getItem('theme');
-    if (
-      theme === 'dark' ||
-      (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, []);
-
   return (
     <FatalErrorBoundary page={FatalErrorPage}>
       <RedwoodProvider titleTemplate={`%PageTitle | ${t('app_title')}`}>
