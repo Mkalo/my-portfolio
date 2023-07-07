@@ -22,7 +22,7 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.6.1",
   "dependencies": {
     "@ionic/react": "^7.1.2",
     "ionicons": "^7.1.2"
