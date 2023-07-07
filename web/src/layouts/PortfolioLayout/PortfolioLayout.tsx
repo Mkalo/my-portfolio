@@ -10,6 +10,7 @@ const PortfolioLayout = ({ children }: PortfolioLayoutProps) => {
     <>
       <Header />
       <main>{children}</main>
+      <hr className="mt-4" />
       <Footer />
     </>
   );

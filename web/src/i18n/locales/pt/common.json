@@ -1,4 +1,13 @@
 {
-  "app_title": "Portfólio do Mkalo",
-  "hello_world": "Olá Mundo"
+  "app_title": "Portfólio do Matheus Costa",
+  "hello_world": "Olá Mundo",
+  "position": "Engenheiro de Software Sênior",
+  "yearsOfExperience": "Anos de experiência",
+  "yearsWithCount_one": "{{count}} ano",
+  "yearsWithCount_other": "{{count}} anos",
+  "technicalSkills": "Competências Técnicas",
+  "skill": "Competência",
+  "years": "Anos",
+  "level": "Nível",
+  "additionalSkills": "Competências adicionais"
 }
