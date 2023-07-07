@@ -1,6 +1,6 @@
 import type { ComponentMeta, ComponentStory } from '@storybook/react';
 
-import ProfileImage from 'src/images/profile.png';
+import ProfileImage from 'src/images/profile.webp';
 
 import ProfilePicture from './ProfilePicture';
 

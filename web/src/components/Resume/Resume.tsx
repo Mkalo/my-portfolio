@@ -86,20 +86,26 @@ const Resume = () => {
           <h2 className="text-xl font-semibold">Technical Skills</h2>
         </div>
         <div className="flex flex-col gap-10 sm:flex-row">
-          <table className="block max-w-fit flex-shrink-0 border-collapse overflow-x-auto whitespace-nowrap rounded-t-lg shadow-sm shadow-zinc-500 [&_td]:px-5 [&_td]:py-2 [&_th]:px-5 [&_th]:py-2">
+          <table className="w-full max-w-[400px] flex-shrink-0 table-fixed border-collapse overflow-hidden rounded-t-lg shadow-sm shadow-zinc-500 [&_td]:px-5 [&_td]:py-2 [&_th]:px-5 [&_th]:py-2">
             <thead>
               <tr className="bg-emerald-500 dark:text-zinc-800">
-                <th className="text-left">Skill</th>
-                <th className="text-left">Years</th>
-                <th className="text-left">Level</th>
+                <th className="w-[40%] text-left">Skill</th>
+                <th className="w-[20%] text-left">Years</th>
+                <th className="w-[40%] text-left">Level</th>
               </tr>
             </thead>
             <tbody className="[&>*:last-child]:border-emerald-500 [&>*:nth-of-type(even)]:bg-zinc-200 dark:[&>*:nth-of-type(even)]:bg-zinc-900 [&_tr]:border-b [&_tr]:border-zinc-400 dark:[&_tr]:border-zinc-500">
               {TechnicalSkills.map((skill) => (
                 <tr key={skill.name}>
-                  <td className="px-5 py-2">{skill.name}</td>
-                  <td className="px-5 py-2">{skill.years}</td>
-                  <td className="px-5 py-2">{skill.level}</td>
+                  <td className="overflow-hidden text-ellipsis whitespace-nowrap">
+                    {skill.name}
+                  </td>
+                  <td className="overflow-hidden text-ellipsis whitespace-nowrap">
+                    {skill.years}
+                  </td>
+                  <td className="overflow-hidden text-ellipsis whitespace-nowrap">
+                    {skill.level}
+                  </td>
                 </tr>
               ))}
             </tbody>
