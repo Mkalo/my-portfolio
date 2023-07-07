@@ -1,10 +1,6 @@
-import { IonIcon } from '@ionic/react';
-import {
-  briefcaseOutline,
-  calendarOutline,
-  libraryOutline,
-} from 'ionicons/icons';
-
+import BriefcaseOutline from 'src/images/briefcase-outline.svg';
+import CalendarOutline from 'src/images/calendar-outline.svg';
+import LibraryOutline from 'src/images/library-outline.svg';
 import ProfileImage from 'src/images/profile.png';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
@@ -78,11 +74,7 @@ const Resume = () => {
       <hr className="my-4 sm:my-8" />
       <section className="flex flex-col gap-4 sm:flex-row sm:gap-8">
         <div className="flex items-center gap-3">
-          <IonIcon
-            icon={calendarOutline}
-            className="text-2xl"
-            aria-label="calendar"
-          />
+          <CalendarOutline className="h-6 w-6" aria-label="calendar" />
           <h2 className="text-base font-semibold">Years of Experience</h2>
         </div>
         <p>7 years of experience</p>
@@ -90,15 +82,11 @@ const Resume = () => {
       <hr className="my-4 sm:my-8" />
       <section className="flex flex-col gap-8">
         <div className="flex items-center gap-3">
-          <IonIcon
-            icon={libraryOutline}
-            className="text-2xl"
-            aria-label="library"
-          />
+          <LibraryOutline className="h-6 w-6" aria-label="library" />
           <h2 className="text-xl font-semibold">Technical Skills</h2>
         </div>
         <div className="flex flex-col gap-10 sm:flex-row">
-          <table className="block max-w-fit flex-shrink-0 border-collapse overflow-x-auto whitespace-nowrap rounded-t-lg shadow-sm shadow-zinc-500 [&_td]:py-2 [&_td]:px-5 [&_th]:py-2 [&_th]:px-5">
+          <table className="block max-w-fit flex-shrink-0 border-collapse overflow-x-auto whitespace-nowrap rounded-t-lg shadow-sm shadow-zinc-500 [&_td]:px-5 [&_td]:py-2 [&_th]:px-5 [&_th]:py-2">
             <thead>
               <tr className="bg-emerald-500 dark:text-zinc-800">
                 <th className="text-left">Skill</th>
@@ -106,12 +94,12 @@ const Resume = () => {
                 <th className="text-left">Level</th>
               </tr>
             </thead>
-            <tbody className="[&_tr]:border-b [&_tr]:border-zinc-400 dark:[&_tr]:border-zinc-500 [&>*:last-child]:border-emerald-500 [&>*:nth-of-type(even)]:bg-zinc-200 dark:[&>*:nth-of-type(even)]:bg-zinc-900">
+            <tbody className="[&>*:last-child]:border-emerald-500 [&>*:nth-of-type(even)]:bg-zinc-200 dark:[&>*:nth-of-type(even)]:bg-zinc-900 [&_tr]:border-b [&_tr]:border-zinc-400 dark:[&_tr]:border-zinc-500">
               {TechnicalSkills.map((skill) => (
                 <tr key={skill.name}>
-                  <td className="py-2 px-5">{skill.name}</td>
-                  <td className="py-2 px-5">{skill.years}</td>
-                  <td className="py-2 px-5">{skill.level}</td>
+                  <td className="px-5 py-2">{skill.name}</td>
+                  <td className="px-5 py-2">{skill.years}</td>
+                  <td className="px-5 py-2">{skill.level}</td>
                 </tr>
               ))}
             </tbody>
@@ -129,11 +117,7 @@ const Resume = () => {
       <hr className="my-4 sm:my-8" />
       <section className="flex flex-col gap-4 sm:flex-row sm:gap-32">
         <div className="flex h-fit shrink-0 items-center gap-3">
-          <IonIcon
-            icon={briefcaseOutline}
-            className="text-2xl"
-            aria-label="briefcase"
-          />
+          <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
           <h2 className="text-xl font-semibold">Work History</h2>
         </div>
         <p>TODO</p>

@@ -1,5 +1,3 @@
-import { useLayoutEffect } from 'react';
-
 import { useTranslation } from 'react-i18next';
 
 import { FatalErrorBoundary, RedwoodProvider } from '@redwoodjs/web';
