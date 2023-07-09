@@ -52,6 +52,7 @@ const ResumePage = () => {
             'Electron',
             'MVC',
             'REST',
+            'Web Sockets',
             'GraphQL',
             'Optimizations',
             'Scrum',
@@ -67,6 +68,29 @@ const ResumePage = () => {
             'Protobuf',
           ]}
           workHistory={[
+            {
+              company: 'Rock',
+              position: 'Front-end Engineer',
+              startDate: new Date('2020-07-01'),
+              endDate: new Date('2023-03-01'),
+              projects: [
+                {
+                  name: 'Rock Front-end',
+                  url: 'https://rock.so/',
+                  description: t('rockDescription'),
+                  tags: [
+                    'Vue',
+                    'Vuex',
+                    'Typescript',
+                    'Electron',
+                    'Node.js',
+                    'SCSS',
+                    'Protobuf',
+                    'Web Sockets',
+                  ],
+                },
+              ],
+            },
             {
               company: 'Universidade Federal Fluminense',
               position: t('covid19Researcher'),
@@ -107,6 +131,9 @@ const ResumePage = () => {
                   tags: [
                     'C++',
                     'Lua',
+                    'Typescript',
+                    'Node.js',
+                    'React',
                     'Network Protocols',
                     'DLL Injection',
                     'MySQL',

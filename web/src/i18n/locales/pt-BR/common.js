@@ -38,4 +38,12 @@ Recebi um prêmio de melhor monitor de ensino no departamento de ciência da com
 - Utilizei Python e R para criar gráficos e previsões utilizando esses modelos.
 
 Esses recursos foram utilizados pelo governo local para tomar decisões importantes sobre como combater a pandemia de COVID, com a cidade da minha universidade apresentando um dos menores números de casos devido à cooperação entre a universidade e o governo nessas decisões.`,
+  rockDescription: `- Contribuí para o desenvolvimento do Rock, uma plataforma projetada especificamente para trabalho remoto, que possibilita uma transição perfeita para uma forma de trabalho mais assíncrona.
+- O Rock possui uma combinação de mensagens, gerenciamento de tarefas, anotações, videochamadas e compartilhamento de arquivos para facilitar uma ampla gama de atividades, desde o desenvolvimento de produtos até campanhas de recrutamento e marketing.
+- Ingressei como engenheiro Front-End, adquirindo proficiência em Vue.js, Vuex, Protobuf e Electron.
+- Desempenhei um papel fundamental na tomada de decisões técnicas importantes em relação à arquitetura do projeto, propondo e implementando várias refatorações que aprimoraram o processo de desenvolvimento, a experiência do usuário e o desempenho da aplicação.
+- Implementei com sucesso inúmeros recursos principais do aplicativo, incluindo o quadro de tarefas, rastreador de tempo, rolagem virtual de chat, rolagem virtual de tarefas e muitos outros.
+- Auxiliei na portabilidade do aplicativo para Electron usando Node.js, facilitando seu lançamento em várias plataformas, incluindo Windows, Linux e Mac.
+
+O projeto ainda está em andamento e continua crescendo, com milhares de usuários ativos.`,
 };

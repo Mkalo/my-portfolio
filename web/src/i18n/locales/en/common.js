@@ -38,4 +38,12 @@ Won an award of best teaching assistant in the department of computer science an
 - Used Python and R to make graphs and predictions using those models.
 
 It was used by the local government to make key decisions on how to fight the COVID pandemic, with my university's city being one of the lowest cases due to the cooperation of the university and the government in those decisions.`,
+  rockDescription: `- Contributed to the development of Rock, a purpose-built platform for remote work that enables a seamless transition to a more asynchronous way of working.
+- Rock offers a combination of messaging, task management, note-taking, video calls, and file sharing to facilitate a wide range of activities, from product development to recruiting and marketing campaigns.
+- Joined as a Front-End engineer, acquiring proficiency in Vue.js, Vuex, Protobuf and Electron.
+- Played a pivotal role in making key technical decisions regarding the project's architecture, proposing and implementing multiple refactors that enhanced the development process, user experience, and application performance.
+- Successfully implemented numerous core features of the application, including the task board, time tracker, chat virtual scroller, task virtual scroller, and many more.
+- Helped porting the application to Electron using Node.js, facilitating its release across multiple platforms, including Windows, Linux, and Mac.
+
+The project is still ongoing and continues to experience growth, with thousands of active users.`,
 };
