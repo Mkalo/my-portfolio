@@ -1,4 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import remarkGfm from 'remark-gfm';
 
 import BriefcaseOutline from 'src/images/briefcase-outline.svg';
 import CalendarOutline from 'src/images/calendar-outline.svg';
@@ -7,6 +9,7 @@ import LibraryOutline from 'src/images/library-outline.svg';
 import LocationOutline from 'src/images/location-outline.svg';
 import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
+import { formatDateDifference } from 'src/utils';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
 
@@ -27,6 +30,95 @@ interface ResumeProps {
   yearsOfExperience: number;
   technicalSkills: TechnicalSkill[];
   additionalSkills: string[];
+  workHistory: WorkHistoryItemProps[];
+}
+
+interface WorkHistoryItemProps {
+  position: string;
+  company: string;
+  startDate: Date;
+  endDate?: Date; // undefined means it hasn't ended yet
+  projects: {
+    name: string;
+    url?: string;
+    description: string;
+    tags: string[];
+  }[];
+}
+
+function WorkHistoryItem({
+  position,
+  company,
+  startDate,
+  endDate,
+  projects,
+}: WorkHistoryItemProps) {
+  const { i18n } = useTranslation('home');
+
+  return (
+    <article className="relative w-full">
+      <div className="absolute left-[4px] top-[10px] h-[calc(100%-10px)] border-l-2 border-zinc-200 dark:border-zinc-700" />
+      <div className="absolute left-0 top-0 h-[10px] w-[10px] rounded-full border-2 border-blue-400 dark:border-blue-500" />
+      <div className="relative top-[-5px] ml-7 flex flex-col gap-2">
+        <header className="flex w-full flex-col justify-between lg:flex-row">
+          <div className="flex-shrink-0">
+            <h3 className="font-bold">{position}</h3>
+            <span className="text-sm font-semibold text-zinc-600 dark:text-zinc-400">
+              {company}
+            </span>
+          </div>
+          <div className="flex w-fit flex-col text-zinc-500 dark:text-zinc-400">
+            <div className="flex h-fit flex-shrink-0 items-center gap-1">
+              <span className="text-xs font-semibold first-letter:capitalize">
+                {startDate.toLocaleString(i18n.language, {
+                  month: 'long',
+                  year: 'numeric',
+                  timeZone: 'UTC',
+                })}
+              </span>
+              {' - '}
+              <span className="text-xs font-semibold first-letter:capitalize">
+                {endDate?.toLocaleString(i18n.language, {
+                  month: 'long',
+                  year: 'numeric',
+                  timeZone: 'UTC',
+                }) ?? 'Present'}
+              </span>
+            </div>
+            <span className="self-start text-xs font-semibold lg:self-end">
+              {formatDateDifference(startDate, endDate)}
+            </span>
+          </div>
+        </header>
+        {projects.map((project) => (
+          <div key={project.name} className="flex flex-col">
+            <h4 className="text-sm font-semibold">{project.name}</h4>
+            {project.url && (
+              <span className="text-xs font-semibold text-emerald-600 underline dark:text-emerald-500">
+                {project.url}
+              </span>
+            )}
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              className="prose prose-zinc my-2 text-sm text-zinc-600 dark:prose-invert dark:text-zinc-300"
+            >
+              {project.description}
+            </ReactMarkdown>
+            <div className="flex flex-wrap gap-x-2 gap-y-1">
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded border border-zinc-300 px-2 py-0.5 text-xs dark:border-zinc-600"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </article>
+  );
 }
 
 const Resume = ({
@@ -40,6 +132,7 @@ const Resume = ({
   yearsOfExperience,
   technicalSkills,
   additionalSkills,
+  workHistory,
 }: ResumeProps) => {
   const { t } = useTranslation();
 
@@ -132,12 +225,14 @@ const Resume = ({
         </div>
       </section>
       <hr className="my-4 sm:my-8" />
-      <section className="flex flex-col gap-4 sm:flex-row sm:gap-32">
+      <section className="flex flex-col gap-4 md:flex-row md:gap-32">
         <div className="flex h-fit shrink-0 items-center gap-3">
           <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
           <h2 className="text-xl font-semibold">Work History</h2>
         </div>
-        <p>TODO</p>
+        {workHistory.map((item) => (
+          <WorkHistoryItem key={item.company} {...item} />
+        ))}
       </section>
     </article>
   );

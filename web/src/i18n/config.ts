@@ -15,11 +15,11 @@ i18n
     fallbackLng: 'en',
     resources: {
       en: getLanguageTranslations('en'),
-      pt: getLanguageTranslations('pt'),
+      'pt-BR': getLanguageTranslations('pt-BR'),
     },
     ns: ['common'],
     defaultNS: 'common',
-    supportedLngs: ['en', 'pt'],
+    supportedLngs: ['en', 'pt-BR'],
   });
 
 export default i18n;

@@ -66,6 +66,39 @@ const ResumePage = () => {
             'Next.js',
             'Protobuf',
           ]}
+          workHistory={[
+            {
+              company: 'Freelancer',
+              position: 'C/C++ & Full-Stack Developer',
+              startDate: new Date('2016-12-01'),
+              endDate: new Date('2020-07-01'),
+              projects: [
+                {
+                  name: 'The Forgotten Server',
+                  url: 'https://github.com/otland/forgottenserver',
+                  description: `
+- Worked as a freelancer in many different projects, varying from Full Stack web applications to MMORPG private servers with tens of thousands of players, with experience in debugging multithreaded servers, reverse engineering game network protocols and DLL injection.
+- Learned how to be a software developer, being an open-source project with a large community,
+- Learned a lot with all kinds of people. It is the implementation of a server of a popular game, that is coded in C++ and has a scripting system that uses Lua.
+- Was consulted by many people on how to improve their projects, being either fixing bugs that would result in crashes or making optimizations to allow the server to run better.
+- Developed many websites to interact with the server to allow users to create accounts and characters, using PHP, MySQL, HTML and CSS.
+
+It's still ongoing and still has many users.`,
+                  tags: [
+                    'C++',
+                    'Lua',
+                    'Network Protocols',
+                    'MySQL',
+                    'PHP',
+                    'HTML',
+                    'CSS',
+                    'Open Source',
+                    'MongoDB',
+                  ],
+                },
+              ],
+            },
+          ]}
         />
       </div>
     </>

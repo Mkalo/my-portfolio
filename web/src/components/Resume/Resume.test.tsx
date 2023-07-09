@@ -20,6 +20,7 @@ describe('Resume', () => {
           yearsOfExperience={1}
           technicalSkills={[{ name: 'Node.js', years: 3, level: 'Expert' }]}
           additionalSkills={['AWS', 'Git', 'Docker']}
+          workHistory={[]}
         />
       );
     }).not.toThrow();

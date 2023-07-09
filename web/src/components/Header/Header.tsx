@@ -35,7 +35,7 @@ const Header = () => {
         <button
           lang="pt"
           aria-label="portugues"
-          onClick={() => i18next.changeLanguage('pt')}
+          onClick={() => i18next.changeLanguage('pt-BR')}
         >
           <BrazilFlag className="h-6 w-6" />
         </button>
