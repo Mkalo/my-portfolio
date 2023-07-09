@@ -9191,7 +9191,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-inline-react-svg@npm:2.0.2":
+"babel-plugin-inline-react-svg@npm:2.0.2, babel-plugin-inline-react-svg@npm:^2.0.2":
   version: 2.0.2
   resolution: "babel-plugin-inline-react-svg@npm:2.0.2"
   dependencies:
@@ -25905,6 +25905,7 @@ __metadata:
     "@storybook/theming": ^6.5.10
     "@tailwindcss/typography": ^0.5.9
     autoprefixer: ^10.4.8
+    babel-plugin-inline-react-svg: ^2.0.2
     babel-plugin-react-remove-properties: ^0.3.0
     i18next: ^21.8.16
     i18next-browser-languagedetector: ^6.1.4
