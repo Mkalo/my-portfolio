@@ -26,6 +26,10 @@ export default {
     name: 'Matheus Costa',
     position: 'Senior Software Engineer',
     description: `Software Engineer with 7 years of experience, focused on web development. Skilled in Node.js, Typescript, React, Vue.js, Lua and C++. A self-driven and ambitious individual, seeking an opportunity to use creativity and problem-solving skills to design, develop and improve systems and software to bring about growth and sustainability.`,
+    cellphone: '+5521996954269',
+    formattedCellphone: '+55 (21) 99695-4269',
+    email: 'matt@mkalo.dev',
+    location: 'Niterói, RJ - Brazil',
     yearsOfExperience: 7,
     technicalSkills: [
       { name: 'Node.js', years: 7, level: 'Expert' },

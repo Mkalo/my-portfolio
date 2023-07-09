@@ -16,6 +16,10 @@ const ResumePage = () => {
           name="Matheus Costa"
           position={t('position')}
           description={t('description')}
+          cellphone="+5521996954269"
+          formattedCellphone="+55 (21) 99695-4269"
+          email="matt@mkalo.dev"
+          location="Niterói, RJ - Brazil"
           yearsOfExperience={7}
           technicalSkills={[
             { name: 'Node.js', years: 7, level: expert },

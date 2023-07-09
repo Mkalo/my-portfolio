@@ -20,6 +20,10 @@ interface ResumeProps {
   name: string;
   position: string;
   description: string;
+  cellphone: string;
+  formattedCellphone: string;
+  email: string;
+  location: string;
   yearsOfExperience: number;
   technicalSkills: TechnicalSkill[];
   additionalSkills: string[];
@@ -29,6 +33,10 @@ const Resume = ({
   name,
   position,
   description,
+  cellphone,
+  formattedCellphone,
+  email,
+  location,
   yearsOfExperience,
   technicalSkills,
   additionalSkills,
@@ -47,28 +55,28 @@ const Resume = ({
           <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
           <p className="mb-4">{description}</p>
-          <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-300 p-4 dark:bg-zinc-900">
+          <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-200 p-4 dark:bg-zinc-900">
             <div className="flex flex-shrink-0 items-center gap-2">
               <MailOutline className="h-6 w-6" aria-label="mail" />
               <a
-                href="mailto:matt@mkalo.dev"
-                className="text-emerald-500 underline"
+                href={`mailto:${email}`}
+                className="text-emerald-600 underline dark:text-emerald-500"
               >
-                matt@mkalo.dev
+                {email}
               </a>
             </div>
             <div className="flex flex-shrink-0 items-center gap-2">
               <CallOutline className="h-6 w-6" aria-label="phone" />
               <a
-                href="tel:+5521996954269"
-                className="text-emerald-500 underline"
+                href={`tel:${cellphone}`}
+                className="text-emerald-600 underline dark:text-emerald-500"
               >
-                +55 (21) 99695-4269
+                {formattedCellphone}
               </a>
             </div>
             <div className="flex flex-shrink-0 items-center gap-2">
               <LocationOutline className="h-6 w-6" aria-label="location" />
-              <p>Niterói, RJ - Brazil</p>
+              <p>{location}</p>
             </div>
           </div>
         </hgroup>
