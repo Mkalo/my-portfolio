@@ -21,6 +21,7 @@
  */
 html.dark > body {
   @apply bg-zinc-800 text-zinc-100;
+  @apply outline-none;
 }
 
 html, body, #redwood-app {

@@ -2,7 +2,10 @@ import { useTranslation } from 'react-i18next';
 
 import BriefcaseOutline from 'src/images/briefcase-outline.svg';
 import CalendarOutline from 'src/images/calendar-outline.svg';
+import CallOutline from 'src/images/call-outline.svg';
 import LibraryOutline from 'src/images/library-outline.svg';
+import LocationOutline from 'src/images/location-outline.svg';
+import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
@@ -34,16 +37,44 @@ const Resume = ({
 
   return (
     <article>
-      <header className="flex flex-col gap-8 sm:flex-row sm:gap-16">
-        <div className="flex justify-center">
-          <ProfilePicture src={ProfileImage} />
+      <header className="flex flex-col gap-8 sm:flex-row sm:gap-12">
+        <div className="flex flex-shrink-0 flex-col gap-4">
+          <div className="flex justify-center">
+            <ProfilePicture src={ProfileImage} />
+          </div>
         </div>
         <hgroup className="flex flex-col">
           <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
-          <p>{description}</p>
+          <p className="mb-4">{description}</p>
+          <div className="flex w-fit flex-wrap gap-6 rounded bg-zinc-300 p-4 dark:bg-zinc-900">
+            <h3 className="flex-shrink-0 text-lg font-semibold">Contact</h3>
+            <div className="flex flex-shrink-0 items-center gap-2">
+              <MailOutline className="h-6 w-6" aria-label="mail" />
+              <a
+                href="mailto:matt@mkalo.dev"
+                className="text-emerald-500 underline"
+              >
+                matt@mkalo.dev
+              </a>
+            </div>
+            <div className="flex flex-shrink-0 items-center gap-2">
+              <CallOutline className="h-6 w-6" aria-label="phone" />
+              <a
+                href="tel:+5521996954269"
+                className="text-emerald-500 underline"
+              >
+                +55 (21) 99695-4269
+              </a>
+            </div>
+            <div className="flex flex-shrink-0 items-center gap-2">
+              <LocationOutline className="h-6 w-6" aria-label="location" />
+              <p>Niterói, RJ - Brazil</p>
+            </div>
+          </div>
         </hgroup>
       </header>
+
       <hr className="my-4 sm:my-8" />
       <section className="flex flex-col gap-4 sm:flex-row sm:gap-8">
         <div className="flex items-center gap-3">
