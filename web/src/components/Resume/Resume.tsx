@@ -47,8 +47,7 @@ const Resume = ({
           <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
           <p className="mb-4">{description}</p>
-          <div className="flex w-fit flex-wrap gap-6 rounded bg-zinc-300 p-4 dark:bg-zinc-900">
-            <h3 className="flex-shrink-0 text-lg font-semibold">Contact</h3>
+          <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-300 p-4 dark:bg-zinc-900">
             <div className="flex flex-shrink-0 items-center gap-2">
               <MailOutline className="h-6 w-6" aria-label="mail" />
               <a
