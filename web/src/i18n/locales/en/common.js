@@ -26,4 +26,16 @@ module.exports = {
 - Developed multiple websites to facilitate user interaction with the server, enabling account and character creation. Utilized technologies such as PHP, MySQL, HTML, and CSS.
 
 The project continues to thrive with a significant user base.`,
+  taDescription: `- Aided freshmen in the first semester of Computer Science to evaluate ICPC problems and create elaborate solutions.
+- The problems were solved in Python as it was the first language they teached in my university.
+- In charge of a lot of problem solving to gather a list of problems and topics to improve the classes by better matching the content of other programming classes with the laboratory class.
+
+Won an award of best teaching assistant in the department of computer science and was invited to give a presentation of the project and show the outcome of those efforts through the year to other departments.`,
+  covid19Researcher: 'COVID-19 Researcher',
+  covid19ResearcherProjectName: 'COVID-19 Research Group GET-UFF',
+  covid19ResearcherDescription: `- Worked with the modeling team building visualization tools, data scraping algorithms to gather data from official government sources, epidemiology models such as SIR and SEIR.
+- In charge of parameter optimization in Python using a modified version of the particle swarm optimization method.
+- Used Python and R to make graphs and predictions using those models.
+
+It was used by the local government to make key decisions on how to fight the COVID pandemic, with my university's city being one of the lowest cases due to the cooperation of the university and the government in those decisions.`,
 };

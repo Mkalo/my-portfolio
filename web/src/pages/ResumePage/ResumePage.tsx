@@ -68,6 +68,33 @@ const ResumePage = () => {
           ]}
           workHistory={[
             {
+              company: 'Universidade Federal Fluminense',
+              position: t('covid19Researcher'),
+              startDate: new Date('2020-05-01'),
+              endDate: new Date('2020-07-01'),
+              projects: [
+                {
+                  name: t('covid19ResearcherProjectName'),
+                  url: 'https://covid19.getuff.com.br/',
+                  description: t('covid19ResearcherDescription'),
+                  tags: [],
+                },
+              ],
+            },
+            {
+              company: 'Universidade Federal Fluminense',
+              position: 'Teaching Assistant',
+              startDate: new Date('2017-01-01'),
+              endDate: new Date('2018-11-01'),
+              projects: [
+                {
+                  name: 'Problem Solving Laboratory Teaching Assistant',
+                  description: t('taDescription'),
+                  tags: [],
+                },
+              ],
+            },
+            {
               company: 'Freelancer',
               position: 'C/C++ & Full-Stack Developer',
               startDate: new Date('2016-12-01'),

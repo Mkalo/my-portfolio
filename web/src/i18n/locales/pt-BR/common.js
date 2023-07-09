@@ -26,4 +26,16 @@ module.exports = {
 - Desenvolvi vários sites para facilitar a interação do usuário com o servidor, permitindo a criação de contas e personagens. Utilizei tecnologias como PHP, MySQL, HTML e CSS.
 
 O projeto continua a prosperar com uma base significativa de usuários.`,
+  taDescription: `- Auxiliei calouros no primeiro semestre de Ciência da Computação na avaliação de problemas do ICPC e na criação de soluções elaboradas.
+- Os problemas foram resolvidos em Python, pois era a primeira linguagem ensinada em minha universidade.
+- Responsável por resolver muitos problemas para compilar uma lista de problemas e tópicos para melhorar as aulas, combinando melhor o conteúdo de outras disciplinas de programação com a aula de laboratório.
+
+Recebi um prêmio de melhor monitor de ensino no departamento de ciência da computação e fui convidado para fazer uma apresentação do projeto e mostrar os resultados desses esforços ao longo do ano para outros departamentos.`,
+  covid19Researcher: 'Pesquisador de COVID-19',
+  covid19ResearcherProjectName: 'Grupo de Pesquisa COVID-19 GET-UFF',
+  covid19ResearcherDescription: `- Trabalhei com a equipe de modelagem na construção de ferramentas de visualização, algoritmos de coleta de dados de fontes oficiais do governo, modelos epidemiológicos como SIR e SEIR.
+- Responsável pela otimização de parâmetros em Python usando uma versão modificada do método de otimização de enxame de partículas.
+- Utilizei Python e R para criar gráficos e previsões utilizando esses modelos.
+
+Esses recursos foram utilizados pelo governo local para tomar decisões importantes sobre como combater a pandemia de COVID, com a cidade da minha universidade apresentando um dos menores números de casos devido à cooperação entre a universidade e o governo nessas decisões.`,
 };

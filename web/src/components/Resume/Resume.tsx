@@ -256,9 +256,14 @@ const Resume = ({
           <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
           <h2 className="text-xl font-semibold">{t('workHistory')}</h2>
         </div>
-        {workHistory.map((item) => (
-          <WorkHistoryItem key={item.company} {...item} />
-        ))}
+        <div className="flex flex-col gap-6">
+          {workHistory.map((item) => (
+            <WorkHistoryItem
+              key={`${item.company}-${item.position}`}
+              {...item}
+            />
+          ))}
+        </div>
       </section>
     </article>
   );
