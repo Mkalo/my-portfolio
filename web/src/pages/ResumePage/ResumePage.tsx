@@ -77,7 +77,7 @@ const ResumePage = () => {
                   name: t('covid19ResearcherProjectName'),
                   url: 'https://covid19.getuff.com.br/',
                   description: t('covid19ResearcherDescription'),
-                  tags: [],
+                  tags: ['Python', 'R', 'Optimization', 'Data Analysis'],
                 },
               ],
             },
@@ -90,7 +90,7 @@ const ResumePage = () => {
                 {
                   name: 'Problem Solving Laboratory Teaching Assistant',
                   description: t('taDescription'),
-                  tags: [],
+                  tags: ['Problem Solving', 'Python'],
                 },
               ],
             },
