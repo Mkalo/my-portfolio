@@ -228,7 +228,7 @@ const Resume = ({
       <section className="flex flex-col gap-4 md:flex-row md:gap-32">
         <div className="flex h-fit shrink-0 items-center gap-3">
           <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
-          <h2 className="text-xl font-semibold">Work History</h2>
+          <h2 className="text-xl font-semibold">{t('workHistory')}</h2>
         </div>
         {workHistory.map((item) => (
           <WorkHistoryItem key={item.company} {...item} />

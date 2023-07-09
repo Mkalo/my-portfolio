@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 function getLanguageTranslations(language: string) {
   return {
-    common: require(`./locales/${language}/common.json`),
+    common: require(`./locales/${language}/common.js`),
   };
 }
 

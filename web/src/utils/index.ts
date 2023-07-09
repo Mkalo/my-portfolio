@@ -1,3 +1,5 @@
+import i18n from 'src/i18n/config';
+
 export function formatDateDifference(first: Date, second?: Date) {
   second = second || new Date();
   const difference = Math.abs(first.getTime() - second.getTime());
@@ -8,8 +10,8 @@ export function formatDateDifference(first: Date, second?: Date) {
     1
   );
 
-  const yearsString = years > 0 ? `${years} year${years > 1 ? 's' : ''}` : '';
-  const monthsString = `${months} month${months > 1 ? 's' : ''}`;
+  const yearsString = i18n.t('yearsWithCount', { count: years });
+  const monthsString = i18n.t('monthsWithCount', { count: months });
 
   return `${yearsString} ${monthsString}`;
 }
