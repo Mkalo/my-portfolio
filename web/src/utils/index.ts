@@ -13,5 +13,5 @@ export function formatDateDifference(first: Date, second?: Date) {
   const yearsString = i18n.t('yearsWithCount', { count: years });
   const monthsString = i18n.t('monthsWithCount', { count: months });
 
-  return `${yearsString} ${monthsString}`;
+  return years > 0 ? `${yearsString} ${monthsString}` : monthsString;
 }
