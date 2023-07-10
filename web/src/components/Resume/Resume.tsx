@@ -2,18 +2,37 @@ import { Suspense, lazy } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-import BriefcaseOutline from 'src/images/briefcase-outline.svg';
-import CalendarOutline from 'src/images/calendar-outline.svg';
-import CallOutline from 'src/images/call-outline.svg';
-import LibraryOutline from 'src/images/library-outline.svg';
-import LocationOutline from 'src/images/location-outline.svg';
-import MailOutline from 'src/images/mail-outline.svg';
+// import BriefcaseOutline from 'src/images/briefcase-outline.svg';
+// import CalendarOutline from 'src/images/calendar-outline.svg';
+// import CallOutline from 'src/images/call-outline.svg';
+// import LibraryOutline from 'src/images/library-outline.svg';
+// import LocationOutline from 'src/images/location-outline.svg';
+// import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
 import { formatDateDifference } from 'src/utils';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
 
 const ReactMarkdown = lazy(() => import('react-markdown'));
+
+const BriefcaseOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
+const CalendarOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
+const CallOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
+const LibraryOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
+const LocationOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
+const MailOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
+  <div {...props}></div>
+);
 
 interface TechnicalSkill {
   name: string;
@@ -96,9 +115,12 @@ function WorkHistoryItem({
           <div key={project.name} className="flex flex-col">
             <h4 className="text-sm font-semibold">{project.name}</h4>
             {project.url && (
-              <span className="text-xs font-semibold text-emerald-600 underline dark:text-emerald-500">
+              <a
+                className="text-xs font-semibold text-emerald-600 underline dark:text-emerald-500"
+                href={project.url}
+              >
                 {project.url}
-              </span>
+              </a>
             )}
             <Suspense
               fallback={
