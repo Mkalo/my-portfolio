@@ -2,37 +2,18 @@ import { Suspense, lazy } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
-// import BriefcaseOutline from 'src/images/briefcase-outline.svg';
-// import CalendarOutline from 'src/images/calendar-outline.svg';
-// import CallOutline from 'src/images/call-outline.svg';
-// import LibraryOutline from 'src/images/library-outline.svg';
-// import LocationOutline from 'src/images/location-outline.svg';
-// import MailOutline from 'src/images/mail-outline.svg';
+import BriefcaseOutline from 'src/images/briefcase-outline.svg';
+import CalendarOutline from 'src/images/calendar-outline.svg';
+import CallOutline from 'src/images/call-outline.svg';
+import LibraryOutline from 'src/images/library-outline.svg';
+import LocationOutline from 'src/images/location-outline.svg';
+import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
 import { formatDateDifference } from 'src/utils';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
 
 const ReactMarkdown = lazy(() => import('react-markdown'));
-
-const BriefcaseOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
-const CalendarOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
-const CallOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
-const LibraryOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
-const LocationOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
-const MailOutline = (props: React.HTMLAttributes<HTMLDivElement>) => (
-  <div {...props}></div>
-);
 
 interface TechnicalSkill {
   name: string;
