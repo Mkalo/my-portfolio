@@ -38,3 +38,7 @@ yarn rw dev
 Your browser should automatically open to http://localhost:8910 with the Home page of the site.
 
 Deployed at: https://www.vercel.com/
+
+<p align="center">
+	<img src="./web/public/pagespeed-insights.svg" width="800px">
+</p>
