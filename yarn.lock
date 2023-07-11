@@ -21674,7 +21674,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^18.2.0":
+"react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -21848,7 +21848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -25912,8 +25912,8 @@ __metadata:
     postcss: ^8.4.16
     postcss-loader: ^7.0.1
     prop-types: 15.8.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
+    react: 18.2.0
+    react-dom: 18.2.0
     react-i18next: ^11.18.3
     react-markdown: ^8.0.7
     remark-gfm: ^3.0.1
