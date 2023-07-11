@@ -110,7 +110,7 @@ const Resume = ({
                 <th className="w-[40%] text-left">{t('level')}</th>
               </tr>
             </thead>
-            <tbody className="[&>*:last-child]:border-emerald-500 [&>*:nth-of-type(even)]:bg-zinc-200 dark:[&>*:nth-of-type(even)]:bg-zinc-900 [&_tr]:border-b [&_tr]:border-zinc-400 dark:[&_tr]:border-zinc-500">
+            <tbody className="[&>*:last-child]:!border-emerald-500 [&>*:nth-of-type(even)]:bg-zinc-200 dark:[&>*:nth-of-type(even)]:bg-zinc-900 [&_tr]:border-b [&_tr]:border-zinc-400 dark:[&_tr]:border-zinc-500">
               {technicalSkills.map((skill) => (
                 <tr key={skill.name}>
                   <td className="overflow-hidden text-ellipsis whitespace-nowrap">
