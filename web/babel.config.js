@@ -1,6 +1,6 @@
-module.exports = {
-  plugins: [
-    ['react-remove-properties', { properties: ['data-test-id'] }],
-    'inline-react-svg',
-  ],
-};
+const plugins = ['inline-react-svg'];
+if (process.env.NODE_ENV !== 'test') {
+  plugins.push(['react-remove-properties', { properties: ['data-testid'] }]);
+}
+
+module.exports = { plugins };

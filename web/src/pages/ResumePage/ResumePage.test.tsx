@@ -6,8 +6,7 @@ import ResumePage from './ResumePage';
 //   https://redwoodjs.com/docs/testing#testing-pages-layouts
 
 describe('ResumePage', () => {
-  // TODO: Figure out how to fix this test
-  it.skip('renders successfully', () => {
+  it('renders successfully', () => {
     expect(() => {
       render(<ResumePage />);
     }).not.toThrow();
