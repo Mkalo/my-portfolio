@@ -1,9 +1,8 @@
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
-import { useTheme } from 'src/hooks/useTheme';
 import BrazilFlag from 'src/images/br.svg';
 import MoonOutline from 'src/images/moon-outline.svg';
 import SunnyOutline from 'src/images/sunny-outline.svg';
