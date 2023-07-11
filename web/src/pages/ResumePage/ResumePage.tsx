@@ -45,6 +45,7 @@ const ResumePage = () => {
             'Prisma',
             'Sass',
             'Tailwind',
+            'MUI',
             'Jest',
             'Cypress',
             'Puppeteer',
@@ -68,6 +69,34 @@ const ResumePage = () => {
             'Protobuf',
           ]}
           workHistory={[
+            {
+              company: 'Blue Orange Digital',
+              position: 'Senior Full Stack Engineer',
+              startDate: new Date('2023-02-01'),
+              projects: [
+                {
+                  name: 'Insight Partners - Portco Platform',
+                  description: t('insightDescription'),
+                  tags: [
+                    'Next.js',
+                    'Nest.js',
+                    'Tailwind',
+                    'Prisma',
+                    'React Query',
+                    'AWS',
+                    'S3',
+                    'CloudFront',
+                    'SES',
+                    'EKS',
+                    'Docker',
+                    'Kubernetes',
+                    'Node.js',
+                    'Axios',
+                    'MUI',
+                  ],
+                },
+              ],
+            },
             {
               company: 'Rock',
               position: 'Front-end Engineer',

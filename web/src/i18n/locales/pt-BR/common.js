@@ -46,4 +46,14 @@ Esses recursos foram utilizados pelo governo local para tomar decisões importan
 - Auxiliei na portabilidade do aplicativo para Electron usando Node.js, facilitando seu lançamento em várias plataformas, incluindo Windows, Linux e Mac.
 
 O projeto ainda está em andamento e continua crescendo, com milhares de usuários ativos.`,
+  insightDescription: `- A Insight Partners é uma empresa líder global em capital de risco e private equity, especializada em investimentos em tecnologia de alto crescimento, fornecendo orientação estratégica, suporte operacional e capital para ajudar as empresas a acelerar seu crescimento e alcançar seus objetivos.
+- Desenvolvendo e mantendo a infraestrutura de back-end para uma plataforma de ponta projetada para as empresas do portfólio da Insight Partners.
+- Implementando soluções robustas e escaláveis para garantir integração perfeita com vários serviços e sistemas.
+- Desempenhando um papel fundamental na construção das funcionalidades principais da plataforma, como o início de compromissos de consultoria e a facilitação do acesso à Scaleup Academy.
+- Colaborando de perto com equipes multidisciplinares, incluindo desenvolvedores front-end e designers, para oferecer uma experiência de plataforma coesa e amigável ao usuário.
+- Otimizando o desempenho e a confiabilidade da plataforma por meio de testes minuciosos, depuração e melhoria contínua.
+- Garantindo a segurança e integridade da plataforma por meio da implementação das melhores práticas e seguindo os padrões do setor.
+- Projetando e desenvolvendo APIs para facilitar a troca de dados e integração com sistemas externos.
+- Colaborando com as partes interessadas para reunir requisitos, identificar oportunidades de melhoria e propor soluções inovadoras.
+- Participando de processos de desenvolvimento ágil, incluindo planejamento de sprint, reuniões diárias de alinhamento e reuniões retrospectivas.`,
 };
