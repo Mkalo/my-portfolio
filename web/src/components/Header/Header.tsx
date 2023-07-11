@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
@@ -12,16 +12,27 @@ import UsaFlag from 'src/images/us.svg';
 import logo from './logo.webp';
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
   const { t } = useTranslation();
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    if (theme === 'dark') {
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme) {
+      setTheme(localTheme);
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark');
+      localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
     } else {
+      setTheme('light');
+      localStorage.setItem('theme', 'light');
       document.documentElement.classList.remove('dark');
     }
-  }, [theme]);
+  };
 
   return (
     <nav className="mb-4 flex justify-between border-b border-gray-400 px-5 py-2.5">
