@@ -18,13 +18,13 @@ async function renderResume(darkMode?: boolean) {
 
   await page.setViewport({
     width: 768,
-    height: 1200,
+    height: 800,
   });
 
   await page.goto(RESUME_ENDPOINT);
 
   // Wait for layout to stabilize
-  await sleep(5000);
+  await sleep(3000);
 
   const htmlElement = await page.$('html');
 
