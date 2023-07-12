@@ -65,6 +65,7 @@ const Resume = ({
             }`}
             target="_blank"
             rel="noreferrer"
+            aria-label="download resume"
           >
             <DownloadOutline className="h-6 w-6" />
           </a>
