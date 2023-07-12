@@ -5216,13 +5216,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sparticuz/chromium@npm:114":
+"@sparticuz/chromium-min@npm:114":
   version: 114.0.0
-  resolution: "@sparticuz/chromium@npm:114.0.0"
+  resolution: "@sparticuz/chromium-min@npm:114.0.0"
   dependencies:
     follow-redirects: ^1.15.2
     tar-fs: ^2.1.1
-  checksum: e203e32d80386265df3c8f63c2d0da5dde5f018e05dce52ad118e0b34768945631e0aa969e20d1e17c579c08509903144d0a5d45f14d1deaacfea052737d963d
+  checksum: 58d2f82acfaff1551cccd05c714d4e209b133558a591af8a41d334d6bbac09253888f9663a20df47f935c8ea2609ec6377c20a1b097689862e69f4e3d7c13fdc
   languageName: node
   linkType: hard
 
@@ -8569,7 +8569,7 @@ __metadata:
   dependencies:
     "@redwoodjs/api": ^5.4.2
     "@redwoodjs/graphql-server": ^5.4.2
-    "@sparticuz/chromium": 114
+    "@sparticuz/chromium-min": 114
     puppeteer: ^20.8.1
     puppeteer-core: ^20.8.1
   languageName: unknown

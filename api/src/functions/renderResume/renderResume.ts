@@ -1,6 +1,6 @@
 import type { APIGatewayEvent, Context } from 'aws-lambda';
 
-const chromium = require('@sparticuz/chromium');
+const chromium = require('@sparticuz/chromium-min');
 const puppeteer = require('puppeteer-core');
 
 async function render(darkMode?: boolean) {
@@ -9,7 +9,9 @@ async function render(darkMode?: boolean) {
       ? {
           args: chromium.args,
           defaultViewport: chromium.defaultViewport,
-          executablePath: await chromium.executablePath(),
+          executablePath: await chromium.executablePath(
+            'https://github.com/Sparticuz/chromium/releases/download/v114.0.0/chromium-v114.0.0-pack.tar'
+          ),
           headless: chromium.headless,
         }
       : {
