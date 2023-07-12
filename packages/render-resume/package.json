@@ -1,0 +1,24 @@
+{
+  "name": "render-resume",
+  "version": "1.0.0",
+  "description": "Render resume from HTML to PDF",
+  "main": "index.ts",
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^20.8.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "start": "ts-node --transpile-only index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only index.ts"
+  },
+  "engines": {
+    "node": "=18.12.1"
+  }
+}
