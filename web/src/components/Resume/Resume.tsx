@@ -60,7 +60,7 @@ const Resume = ({
           <a
             role="button"
             className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
-            href={`http://render-resume-eb.eba-mr3e2sa6.us-east-1.elasticbeanstalk.com/${
+            href={`http://render-resume.eba-bx2pakaj.us-east-1.elasticbeanstalk.com/${
               theme === 'dark' ? '?darkMode=true' : ''
             }`}
             target="_blank"
