@@ -1,11 +1,30 @@
 import type { APIGatewayEvent, Context } from 'aws-lambda';
-import chromium from 'chrome-aws-lambda';
 
 import { logger } from 'src/lib/logger';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let chrome: any = {
+  args: [],
+};
+let puppeteer;
+
+if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+  // running on the Vercel platform.
+  chrome = require('chrome-aws-lambda');
+  puppeteer = require('puppeteer-core');
+} else {
+  // running locally.
+  puppeteer = require('puppeteer');
+}
+
 async function render(darkMode?: boolean) {
-  const browser = await chromium.puppeteer.launch({
+  if (chrome.executablePath) await chrome.executablePath;
+  const browser = await puppeteer.launch({
+    args: [...chrome.args, '--hide-scrollbars', '--disable-web-security'],
+    defaultViewport: chrome.defaultViewport,
+    executablePath: chrome.executablePath,
     headless: true,
+    ignoreHTTPSErrors: true,
   });
 
   const page = await browser.newPage();
