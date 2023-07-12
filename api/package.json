@@ -6,9 +6,9 @@
     "@redwoodjs/api": "^5.4.2",
     "@redwoodjs/graphql-server": "^5.4.2",
     "chrome-aws-lambda": "^10.1.0",
-    "playwright-core": "^1.36.0"
+    "puppeteer-core": "^20.8.1"
   },
   "devDependencies": {
-    "playwright": "^1.36.0"
+    "puppeteer": "^20.8.1"
   }
 }
