@@ -1,16 +1,21 @@
 import type { APIGatewayEvent, Context } from 'aws-lambda';
-import puppeteer from 'puppeteer';
+import chromium from 'chrome-aws-lambda';
+import playwright from 'playwright-core';
 
 import { logger } from 'src/lib/logger';
 
 async function render(darkMode?: boolean) {
-  const browser = await puppeteer.launch({
-    headless: true,
+  const executablePath = await chromium.executablePath;
+
+  const browser = await playwright.chromium.launch({
+    headless: executablePath ? chromium.headless : true,
+    args: chromium.args,
+    ...(executablePath ? { executablePath } : {}),
   });
 
   const page = await browser.newPage();
 
-  await page.setViewport({
+  await page.setViewportSize({
     width: 950,
     height: 950,
   });
