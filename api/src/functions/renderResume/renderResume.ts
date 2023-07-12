@@ -18,11 +18,14 @@ if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
 }
 
 async function render(darkMode?: boolean) {
-  if (chrome.executablePath) await chrome.executablePath;
   const browser = await puppeteer.launch({
     args: [...chrome.args, '--hide-scrollbars', '--disable-web-security'],
     defaultViewport: chrome.defaultViewport,
-    executablePath: chrome.executablePath,
+    ...(chrome.executablePath
+      ? {
+          executablePath: await chrome.executablePath,
+        }
+      : {}),
     headless: true,
     ignoreHTTPSErrors: true,
   });
