@@ -1,11 +1,13 @@
 import express, { Router, Request, Response } from 'express';
 import puppeteer from 'puppeteer';
 
-const RESUME_ENDPOINT = 'https://mkalo.dev/resume';
+const RESUME_ENDPOINT = 'http://localhost:8910/resume';
 
 const port = process.env.PORT || 3333;
 const app = express();
 const route = Router();
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function renderResume(darkMode?: boolean) {
   const browser = await puppeteer.launch({
@@ -15,11 +17,14 @@ async function renderResume(darkMode?: boolean) {
   const page = await browser.newPage();
 
   await page.setViewport({
-    width: 950,
-    height: 950,
+    width: 768,
+    height: 1200,
   });
 
   await page.goto(RESUME_ENDPOINT);
+
+  // Wait for layout to stabilize
+  await sleep(5000);
 
   const htmlElement = await page.$('html');
 
@@ -36,8 +41,8 @@ async function renderResume(darkMode?: boolean) {
   if (darkMode) await htmlElement.evaluate((el) => el.classList.add('dark'));
 
   const buffer = await page.pdf({
-    width: boundingBox.width + 'px',
-    height: boundingBox.height + 50 + 'px',
+    width: `${boundingBox.width * (4 / 3)}px`,
+    height: `${boundingBox.height * 0.9}px`,
     printBackground: true,
   });
 
