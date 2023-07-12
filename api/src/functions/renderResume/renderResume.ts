@@ -1,10 +1,9 @@
 import chromium from '@sparticuz/chromium';
 import type { APIGatewayEvent, Context } from 'aws-lambda';
-import type { PuppeteerNode } from 'puppeteer-core';
 
 import { logger } from 'src/lib/logger';
 
-let puppeteer: PuppeteerNode;
+let puppeteer;
 
 if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
   puppeteer = require('puppeteer-core');
