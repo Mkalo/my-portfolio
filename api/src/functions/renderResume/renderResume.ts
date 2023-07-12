@@ -69,11 +69,12 @@ export const handler = async (event: APIGatewayEvent, _context: Context) => {
   }
 
   return {
+    isBase64Encoded: true,
     statusCode: 200,
     headers: {
       'Content-Type': 'application/pdf',
       'Content-Disposition': 'attachment; filename=resume.pdf',
     },
-    body: buffer,
+    body: buffer.toString('base64'),
   };
 };
