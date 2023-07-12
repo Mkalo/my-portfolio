@@ -26,7 +26,7 @@ async function render(darkMode?: boolean) {
           executablePath: await chrome.executablePath,
         }
       : {}),
-    headless: true,
+    headless: process.env.AWS_LAMBDA_FUNCTION_VERSION ? false : true,
     ignoreHTTPSErrors: true,
   });
 
