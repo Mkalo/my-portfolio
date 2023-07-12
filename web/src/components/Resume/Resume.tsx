@@ -66,7 +66,7 @@ const Resume = ({
             target="_blank"
             rel="noreferrer"
           >
-            <DownloadOutline className="h-8 w-8" />
+            <DownloadOutline className="h-6 w-6" />
           </a>
         )}
         <div className="flex flex-shrink-0 flex-col gap-4">
