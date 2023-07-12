@@ -4,11 +4,6 @@
   "private": true,
   "dependencies": {
     "@redwoodjs/api": "^5.4.2",
-    "@redwoodjs/graphql-server": "^5.4.2",
-    "@sparticuz/chromium-min": "114",
-    "puppeteer-core": "^20.8.1"
-  },
-  "devDependencies": {
-    "puppeteer": "^20.8.1"
+    "@redwoodjs/graphql-server": "^5.4.2"
   }
 }
