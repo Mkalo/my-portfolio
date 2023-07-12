@@ -3,6 +3,10 @@ import type { APIGatewayEvent, Context } from 'aws-lambda';
 const chromium = require('@sparticuz/chromium-min');
 const puppeteer = require('puppeteer-core');
 
+export const config = {
+  runtime: 'edge',
+};
+
 async function render(darkMode?: boolean) {
   const browser = await puppeteer.launch(
     process.env.AWS_LAMBDA_FUNCTION_VERSION
