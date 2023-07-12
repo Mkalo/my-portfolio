@@ -55,29 +55,29 @@ const Resume = ({
 
   return (
     <article>
-      <header className="flex flex-col gap-8 sm:flex-row sm:gap-12">
+      <header className="relative flex flex-col gap-8 sm:flex-row sm:gap-12">
+        {showDownloadButton && (
+          <a
+            role="button"
+            className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
+            href={`http://render-resume-eb.eba-mr3e2sa6.us-east-1.elasticbeanstalk.com/${
+              theme === 'dark' ? '?darkMode=true' : ''
+            }`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <DownloadOutline className="h-8 w-8" />
+          </a>
+        )}
         <div className="flex flex-shrink-0 flex-col gap-4">
           <div className="flex justify-center">
             <ProfilePicture src={ProfileImage} />
           </div>
         </div>
-        <hgroup className="relative flex flex-col">
+        <hgroup className="flex flex-col">
           <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
           <p className="mb-4">{description}</p>
-          {showDownloadButton && (
-            <a
-              role="button"
-              className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
-              href={`http://render-resume-eb.eba-mr3e2sa6.us-east-1.elasticbeanstalk.com/${
-                theme === 'dark' ? '?darkMode=true' : ''
-              }`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <DownloadOutline className="h-6 w-6" />
-            </a>
-          )}
           <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-200 p-4 dark:bg-zinc-900">
             <div className="flex flex-shrink-0 items-center gap-2">
               <MailOutline className="h-6 w-6" aria-label="mail" />
