@@ -1,15 +1,7 @@
-import chromium from '@sparticuz/chromium';
 import type { APIGatewayEvent, Context } from 'aws-lambda';
 
-import { logger } from 'src/lib/logger';
-
-let puppeteer;
-
-if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
-  puppeteer = require('puppeteer-core');
-} else {
-  puppeteer = require('puppeteer');
-}
+const chromium = require('@sparticuz/chromium');
+const puppeteer = require('puppeteer-core');
 
 async function render(darkMode?: boolean) {
   const browser = await puppeteer.launch(
@@ -73,7 +65,7 @@ export const handler = async (event: APIGatewayEvent, _context: Context) => {
   try {
     buffer = await render(darkMode);
   } catch (error) {
-    logger.error(error);
+    console.error(error);
     return {
       statusCode: 500,
       headers: {
