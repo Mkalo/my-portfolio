@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from 'express';
 import puppeteer from 'puppeteer';
 
-const RESUME_ENDPOINT = 'http://localhost:8910/resume';
+const RESUME_ENDPOINT = 'http://mkalo.dev/resume';
 
 const port = process.env.PORT || 3333;
 const app = express();
