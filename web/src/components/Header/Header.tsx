@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
+import { useTheme } from 'src/hooks/useTheme';
 import BrazilFlag from 'src/images/br.svg';
 import MoonOutline from 'src/images/moon-outline.svg';
 import SunnyOutline from 'src/images/sunny-outline.svg';
@@ -12,26 +13,7 @@ import logo from './logo.webp';
 
 const Header = () => {
   const { t } = useTranslation();
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    const localTheme = localStorage.getItem('theme');
-    if (localTheme) {
-      setTheme(localTheme);
-    }
-  }, []);
-
-  const toggleTheme = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-      localStorage.setItem('theme', 'dark');
-      document.documentElement.classList.add('dark');
-    } else {
-      setTheme('light');
-      localStorage.setItem('theme', 'light');
-      document.documentElement.classList.remove('dark');
-    }
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <nav className="mb-4 flex justify-between border-b border-gray-400 px-5 py-2.5">

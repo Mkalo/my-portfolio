@@ -2,7 +2,11 @@ import { useTranslation } from 'react-i18next';
 
 import Resume from 'src/components/Resume/Resume';
 
-const ResumePage = () => {
+const ResumePage = ({
+  showDownloadButton = false,
+}: {
+  showDownloadButton?: boolean;
+}) => {
   const { t } = useTranslation();
 
   const expert = t('expert');
@@ -21,6 +25,7 @@ const ResumePage = () => {
           email="matt@mkalo.dev"
           location="Niterói, RJ - Brazil"
           yearsOfExperience={7}
+          showDownloadButton={showDownloadButton}
           technicalSkills={[
             { name: 'Node.js', years: 7, level: expert },
             { name: 'Typescript', years: 5, level: expert },

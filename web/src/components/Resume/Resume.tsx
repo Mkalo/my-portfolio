@@ -3,9 +3,11 @@ import { useTranslation } from 'react-i18next';
 import WorkHistoryItem, {
   WorkHistoryItemProps,
 } from 'src/components/WorkHistoryItem/WorkHistoryItem';
+import { useTheme } from 'src/hooks/useTheme';
 import BriefcaseOutline from 'src/images/briefcase-outline.svg';
 import CalendarOutline from 'src/images/calendar-outline.svg';
 import CallOutline from 'src/images/call-outline.svg';
+import DownloadOutline from 'src/images/download-outline.svg';
 import LibraryOutline from 'src/images/library-outline.svg';
 import LocationOutline from 'src/images/location-outline.svg';
 import MailOutline from 'src/images/mail-outline.svg';
@@ -31,6 +33,7 @@ interface ResumeProps {
   technicalSkills: TechnicalSkill[];
   additionalSkills: string[];
   workHistory: WorkHistoryItemProps[];
+  showDownloadButton?: boolean;
 }
 
 const Resume = ({
@@ -45,8 +48,10 @@ const Resume = ({
   technicalSkills,
   additionalSkills,
   workHistory,
+  showDownloadButton = false,
 }: ResumeProps) => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <article>
@@ -56,10 +61,23 @@ const Resume = ({
             <ProfilePicture src={ProfileImage} />
           </div>
         </div>
-        <hgroup className="flex flex-col">
+        <hgroup className="relative flex flex-col">
           <h2 className="text-2xl font-semibold">{name}</h2>
           <p className="mb-4 font-medium">{position}</p>
           <p className="mb-4">{description}</p>
+          {showDownloadButton && (
+            <a
+              role="button"
+              className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
+              href={`http://render-resume-eb.eba-mr3e2sa6.us-east-1.elasticbeanstalk.com/${
+                theme === 'dark' ? '?darkMode=true' : ''
+              }`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <DownloadOutline className="h-6 w-6" />
+            </a>
+          )}
           <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-200 p-4 dark:bg-zinc-900">
             <div className="flex flex-shrink-0 items-center gap-2">
               <MailOutline className="h-6 w-6" aria-label="mail" />

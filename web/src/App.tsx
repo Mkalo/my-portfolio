@@ -8,6 +8,7 @@ import Routes from 'src/Routes';
 
 import './index.scss';
 import './i18n/config';
+import { ThemeProvider } from './hooks/useTheme';
 
 const App = () => {
   const { t } = useTranslation();
@@ -16,7 +17,9 @@ const App = () => {
     <FatalErrorBoundary page={FatalErrorPage}>
       <RedwoodProvider titleTemplate={`%PageTitle | ${t('app_title')}`}>
         <RedwoodApolloProvider>
-          <Routes />
+          <ThemeProvider>
+            <Routes />
+          </ThemeProvider>
         </RedwoodApolloProvider>
       </RedwoodProvider>
     </FatalErrorBoundary>
