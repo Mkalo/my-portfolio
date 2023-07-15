@@ -5,6 +5,8 @@ import type ReactMarkdown from 'react-markdown';
 
 import { formatDateDifference } from 'src/utils';
 
+import TagsContainer from '../TagsContainer/TagsContainer';
+
 export interface WorkHistoryItemProps {
   position: string;
   company: string;
@@ -89,16 +91,7 @@ const WorkHistoryItem = ({
             ) : (
               <p className="hidden">{project.description}</p>
             )}
-            <div className="flex flex-wrap gap-x-2 gap-y-1">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded border border-zinc-300 px-2 py-0.5 text-xs dark:border-zinc-600"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+            <TagsContainer tags={project.tags} />
           </div>
         ))}
       </div>

@@ -8,7 +8,7 @@ import TagsContainer from './TagsContainer';
 describe('TagsContainer', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<TagsContainer />);
+      render(<TagsContainer tags={['Test', 'Another Tag']} />);
     }).not.toThrow();
   });
 });
