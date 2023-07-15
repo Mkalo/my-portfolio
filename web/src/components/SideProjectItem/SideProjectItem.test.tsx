@@ -8,7 +8,13 @@ import SideProjectItem from './SideProjectItem';
 describe('SideProjectItem', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<SideProjectItem />);
+      render(
+        <SideProjectItem
+          name="Test Side Project"
+          tags={['Test Tag']}
+          description="Some Description"
+        />
+      );
     }).not.toThrow();
   });
 });
