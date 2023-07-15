@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from 'express';
 import puppeteer from 'puppeteer';
 
-const RESUME_ENDPOINT = 'http://mkalo.dev/resume';
+const RESUME_ENDPOINT = 'https://mkalo.dev/resume';
 
 const port = process.env.PORT || 3333;
 const app = express();
@@ -41,8 +41,10 @@ async function renderResume(language: string, darkMode?: boolean) {
   if (darkMode) await htmlElement.evaluate((el) => el.classList.add('dark'));
 
   const buffer = await page.pdf({
-    width: `${boundingBox.width * (4 / 3)}px`,
-    height: `${boundingBox.height * 0.9}px`,
+    // Who knows wtf is going on here please tell me, I'm just using magic numbers at this point
+    // Need to change when contents of resume changes...
+    width: `${boundingBox.width * 1.8}px`,
+    height: `${boundingBox.height * 0.91}px`,
     printBackground: true,
   });
 
