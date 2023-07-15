@@ -39,6 +39,13 @@ Your browser should automatically open to http://localhost:8910 with the Home pa
 
 Deployed at: https://www.vercel.com/
 
+## PDF Renderer
+
+The project also includes a PDF renderer to allow the download of the resume, it is located separetly in `packages/render-resume` due to being unable to deploy it to vercel as a serverless function (puppeteer dependency is over 50MB, which is the limit for AWS Lambda).
+Instead of using a serverless function, it uses AWS Elastic Beanstalk to deploy a simple Express app to AWS.
+<br/>
+<br/>
+<br/>
 <p align="center">
 	<img src="./web/public/pagespeed-insights.svg" width="800px">
 </p>
