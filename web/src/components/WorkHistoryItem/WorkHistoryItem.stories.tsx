@@ -17,6 +17,7 @@ export default {
       {
         name: 'Test Project',
         description: 'Test Description',
+        url: 'https://mkalo.dev',
         tags: ['Test Tag'],
       },
     ],

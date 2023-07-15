@@ -56,4 +56,17 @@ O projeto ainda está em andamento e continua crescendo, com milhares de usuári
 - Projetando e desenvolvendo APIs para facilitar a troca de dados e integração com sistemas externos.
 - Colaborando com as partes interessadas para reunir requisitos, identificar oportunidades de melhoria e propor soluções inovadoras.
 - Participando de processos de desenvolvimento ágil, incluindo planejamento de sprint, reuniões diárias de alinhamento e reuniões retrospectivas.`,
+  sideProjects: 'Projetos Paralelos',
+  mkaloDevDescription: `- Desenvolvi meu site pessoal usando o framework RedwoodJS com React, Typescript, Tailwind, GraphQL e Prisma.
+- Integrei o site com a Vercel, fazendo o deploy na edge, proporcionando uma experiência rápida e confiável para os usuários.
+- Implementei um renderizador de PDF para gerar um currículo em PDF dinamicamente a partir do site usando o Puppeteer, com deploy na AWS Elastic Beanstalk.`,
+  typescriptOtserverDescription: `- Desenvolvi um projeto em TypeScript, cujo objetivo era aprender TypeScript, implementando o servidor e protocolo de um MMORPG, similar ao de código aberto em C++.`,
+  weeaBotDescription: `- Trabalhei no WeeaBot, um projeto para aprender TypeScript, Node.js e Angular, implementando um chat bot multiplataforma para Discord e Twitch.
+- Dividi o projeto em três repositórios: WeaaBot, a aplicação principal para a API do Express e o Bot do Discord.
+- Escrito em TypeScript e utilizando MongoDB para armazenamento e Express.js para a API.
+- WeaaBotTwitch, o bot para Twitch que se conectaria aos canais IRC para interagir com os usuários no Twitch.
+- WeaaBotWeb, o site do bot para mostrar estatísticas e permitir que o usuário faça login/registo.`,
+  electronPixijsTypescriptDescription: `- Desenvolvi um projeto modelo que continha tudo para começar a construir um jogo para a web e desktop usando Typescript, Electron e PixiJS.`,
+  zippiaCloneDescription: `- Desenvolvi um clone do site Zippia usando Next.js, React, TypeScript, Tailwind e Axios.`,
+  benchmarkNodeNativeAddonsDescription: `- Desenvolvi um projeto para comparar a performance de Node.js com C++ usando modules nativos e JavaScript puro.`,
 };

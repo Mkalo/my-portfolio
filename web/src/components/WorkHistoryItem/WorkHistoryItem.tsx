@@ -7,7 +7,7 @@ import { formatDateDifference } from 'src/utils';
 
 import TagsContainer from '../TagsContainer/TagsContainer';
 
-export interface WorkHistoryItemProps {
+export interface IWorkHistoryItemProps {
   position: string;
   company: string;
   startDate: Date;
@@ -26,7 +26,7 @@ const WorkHistoryItem = ({
   startDate,
   endDate,
   projects,
-}: WorkHistoryItemProps) => {
+}: IWorkHistoryItemProps) => {
   const { i18n } = useTranslation('home');
   const [ReactMarkdownComponent, setReactMarkdownComponent] =
     useState<LazyExoticComponent<typeof ReactMarkdown> | null>(null);
@@ -75,7 +75,7 @@ const WorkHistoryItem = ({
             <h4 className="text-sm font-semibold">{project.name}</h4>
             {project.url && (
               <a
-                className="text-xs font-semibold text-emerald-600 underline dark:text-emerald-500"
+                className="w-fit text-xs font-semibold text-emerald-600 underline dark:text-emerald-500"
                 href={project.url}
               >
                 {project.url}

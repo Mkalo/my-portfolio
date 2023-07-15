@@ -76,5 +76,20 @@ export default {
         ],
       },
     ],
+    sideProjects: [
+      {
+        name: 'Electron Boilerplate',
+        url: 'https://github.com',
+        description: 'A boilerplate for Electron apps',
+        tags: [
+          'Electron',
+          'Typescript',
+          'Javascript',
+          'Node.js',
+          'HTML',
+          'CSS',
+        ],
+      },
+    ],
   },
 } as ComponentMeta<typeof Resume>;

@@ -14,7 +14,7 @@ module.exports = {
   level: 'Level',
   additionalSkills: 'Additional skills',
   description:
-    'Experienced Software Engineer with a focus on web development, bringing 7 years of industry experience to the table. Proficient in Node.js, Typescript, React, Vue.js, Lua, and C++, I possess a strong drive and ambition to utilize my skills in creative problem-solving. My goal is to design, develop, and optimize systems and software that drive growth and sustainability. With a proven track record, I confidently approach complex challenges, delivering innovative solutions of the highest quality.',
+    'Experienced Software Engineer with a focus on web development, bringing 7 years of industry experience to the table. Proficient in Node.js, TypeScript, React, Vue.js, Lua, and C++, I possess a strong drive and ambition to utilize my skills in creative problem-solving. My goal is to design, develop, and optimize systems and software that drive growth and sustainability. With a proven track record, I confidently approach complex challenges, delivering innovative solutions of the highest quality.',
   expert: 'Expert',
   intermediate: 'Intermediate',
   basic: 'Basic',
@@ -56,4 +56,17 @@ The project is still ongoing and continues to experience growth, with thousands 
 - Designing and developing APIs to facilitate data exchange and integration with external systems.
 - Collaborating with stakeholders to gather requirements, identify opportunities for improvement, and propose innovative solutions.
 - Participating in agile development processes, including sprint planning, daily stand-ups, and retrospective meetings.`,
+  sideProjects: 'Side Projects',
+  mkaloDevDescription: `- Developed my personal website using the RedwoodJS framework with React, TypeScript, Tailwind, GraphQL and Prisma.
+- Integrated the website with Vercel deploying it to the edge, providing a fast and reliable experience to the users.
+- Implemented a PDF renderer to generate a resume PDF dynamically from the website using Puppeteer, deployed to AWS Elastic Beanstalk.`,
+  typescriptOtserverDescription: `- Developed project in TypeScript, where the goal was to learn TypeScript by implementing the server and protocol of a MMORPG, similar to the open-source one in C++.`,
+  weeaBotDescription: `- Worked on WeeaBot, a project to learn TypeScript, Node.js, Angular by implementing a multi-platform chat bot for Discord and Twitch.
+- Separated it in three repositories: WeaaBot, main application for express API and Discord Bot.
+- Wrote in TypeScript and used MongoDB for storage and Express.js for API.
+- WeaaBotTwitch, the bot for Twitch that would connect to the IRC channels to interact with users on Twitch.
+- WeaaBotWeb, website for the bot to show statistics and allow the user to login/register. `,
+  electronPixijsTypeScriptDescription: `- Developed a template project that had everything to get started building a game for both web and desktop using TypeScript, Electron and PixiJS.`,
+  zippiaCloneDescription: `- Developed a clone of the Zippia website using Next.js, React, TypeScript, Tailwind and Axios.`,
+  benchmarkNodeNativeAddonsDescription: `- Developed a benchmark to compare the performance of Node.js native addons with pure JavaScript.`,
 };

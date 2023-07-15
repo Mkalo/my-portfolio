@@ -9,7 +9,7 @@ const route = Router();
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-async function renderResume(darkMode?: boolean) {
+async function renderResume(language: string, darkMode?: boolean) {
   const browser = await puppeteer.launch({
     headless: true,
   });
@@ -21,7 +21,7 @@ async function renderResume(darkMode?: boolean) {
     height: 800,
   });
 
-  await page.goto(RESUME_ENDPOINT);
+  await page.goto(`${RESUME_ENDPOINT}?lng=${language}`);
 
   // Wait for layout to stabilize
   await sleep(3000);
@@ -55,13 +55,18 @@ interface RenderedCache {
   buffer: Buffer;
   time: number;
   type: 'dark' | 'light';
+  language: string;
 }
 
 const cache: RenderedCache[] = [];
 
-async function getRenderedResume(darkMode?: boolean, expire = 1000 * 60 * 60) {
+async function getRenderedResume(
+  language: string,
+  darkMode?: boolean,
+  expire = 1000 * 60 * 60
+) {
   const cachedIndex = cache.findIndex(
-    (c) => c.type === (darkMode ? 'dark' : 'light')
+    (c) => c.type === (darkMode ? 'dark' : 'light') && c.language === language
   );
 
   if (cachedIndex !== -1) {
@@ -74,12 +79,13 @@ async function getRenderedResume(darkMode?: boolean, expire = 1000 * 60 * 60) {
     }
   }
 
-  const buffer = await renderResume(darkMode);
+  const buffer = await renderResume(language, darkMode);
 
   cache.push({
     buffer,
     time: Date.now(),
     type: darkMode ? 'dark' : 'light',
+    language,
   });
 
   return buffer;
@@ -87,9 +93,10 @@ async function getRenderedResume(darkMode?: boolean, expire = 1000 * 60 * 60) {
 
 route.get('/', async (req: Request, res: Response) => {
   const darkMode = req.query.darkMode === 'true';
+  const language = req.query.lng ?? 'en';
   let buffer: Buffer;
   try {
-    buffer = await getRenderedResume(darkMode);
+    buffer = await getRenderedResume(language.toString(), darkMode);
   } catch (e) {
     console.error(e);
     return res.status(500).send(e.message);

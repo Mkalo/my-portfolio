@@ -1,19 +1,24 @@
 import { useTranslation } from 'react-i18next';
 
 import WorkHistoryItem, {
-  WorkHistoryItemProps,
+  IWorkHistoryItemProps,
 } from 'src/components/WorkHistoryItem/WorkHistoryItem';
 import { useTheme } from 'src/hooks/useTheme';
 import BriefcaseOutline from 'src/images/briefcase-outline.svg';
 import CalendarOutline from 'src/images/calendar-outline.svg';
 import CallOutline from 'src/images/call-outline.svg';
 import DownloadOutline from 'src/images/download-outline.svg';
+import FileTrayFullOutline from 'src/images/file-tray-full-outline.svg';
 import LibraryOutline from 'src/images/library-outline.svg';
 import LocationOutline from 'src/images/location-outline.svg';
 import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
 
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
+import SideProjectItem, {
+  ISideProjectItemProps,
+} from '../SideProjectItem/SideProjectItem';
+import TagsContainer from '../TagsContainer/TagsContainer';
 
 interface TechnicalSkill {
   name: string;
@@ -32,7 +37,8 @@ interface ResumeProps {
   yearsOfExperience: number;
   technicalSkills: TechnicalSkill[];
   additionalSkills: string[];
-  workHistory: WorkHistoryItemProps[];
+  workHistory: IWorkHistoryItemProps[];
+  sideProjects: ISideProjectItemProps[];
   showDownloadButton?: boolean;
 }
 
@@ -48,9 +54,10 @@ const Resume = ({
   technicalSkills,
   additionalSkills,
   workHistory,
+  sideProjects,
   showDownloadButton = false,
 }: ResumeProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { theme } = useTheme();
 
   return (
@@ -60,9 +67,9 @@ const Resume = ({
           <a
             role="button"
             className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
-            href={`http://render-resume.eba-bx2pakaj.us-east-1.elasticbeanstalk.com/${
-              theme === 'dark' ? '?darkMode=true' : ''
-            }`}
+            href={`http://render-resume.eba-bx2pakaj.us-east-1.elasticbeanstalk.com/?lng=${
+              i18n.language
+            }${theme === 'dark' ? '&darkMode=true' : ''}`}
             target="_blank"
             rel="noreferrer"
             aria-label="download resume"
@@ -120,7 +127,7 @@ const Resume = ({
           <LibraryOutline className="h-6 w-6" aria-label="library" />
           <h2 className="text-xl font-semibold">{t('technicalSkills')}</h2>
         </div>
-        <div className="flex flex-col items-center gap-10 sm:flex-row sm:items-start">
+        <div className="flex flex-col items-center gap-10 md:flex-row md:items-start">
           <table className="w-full max-w-[400px] flex-shrink-0 table-fixed border-collapse overflow-hidden rounded-t-lg shadow-sm shadow-zinc-500 [&_td]:px-5 [&_td]:py-2 [&_th]:px-5 [&_th]:py-2">
             <thead>
               <tr className="bg-emerald-500 dark:text-zinc-800">
@@ -145,18 +152,14 @@ const Resume = ({
               ))}
             </tbody>
           </table>
-          <div className="flex flex-col gap-3">
+          <div className="flex w-full flex-col gap-3">
             <h3 className="font-semibold">{t('additionalSkills')}:</h3>
-            <ul className="flex list-inside list-disc flex-wrap gap-x-4 gap-y-1">
-              {additionalSkills.map((skill) => (
-                <li key={skill}>{skill}</li>
-              ))}
-            </ul>
+            <TagsContainer tags={additionalSkills} />
           </div>
         </div>
       </section>
       <hr className="my-4 sm:my-8" />
-      <section className="flex flex-col gap-4 md:flex-row md:gap-32">
+      <section className="flex flex-col gap-4 lg:flex-row lg:gap-32">
         <div className="flex h-fit shrink-0 items-center gap-3">
           <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
           <h2 className="text-xl font-semibold">{t('workHistory')}</h2>
@@ -167,6 +170,18 @@ const Resume = ({
               key={`${item.company}-${item.position}`}
               {...item}
             />
+          ))}
+        </div>
+      </section>
+      <hr className="my-4 sm:my-8" />
+      <section className="flex flex-col gap-4 lg:flex-row lg:gap-32">
+        <div className="flex h-fit shrink-0 items-center gap-3">
+          <FileTrayFullOutline className="h-6 w-6" aria-label="file tray" />
+          <h2 className="text-xl font-semibold">{t('sideProjects')}</h2>
+        </div>
+        <div className="flex flex-col gap-6">
+          {sideProjects.map((item) => (
+            <SideProjectItem key={item.name} {...item} />
           ))}
         </div>
       </section>
