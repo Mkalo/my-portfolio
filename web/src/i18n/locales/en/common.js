@@ -19,6 +19,18 @@ module.exports = {
   intermediate: 'Intermediate',
   basic: 'Basic',
   workHistory: 'Work History',
+  sideProjects: 'Side Projects',
+  education: 'Education',
+  present: 'Present',
+  bachelorDegree: 'Bachelor of Computer Science',
+  myHighSchool: 'Public School Herbert de Souza',
+  highSchool: 'High School',
+  teachingAssistant: 'Teaching Assistant',
+  problemSolvingLab: 'Problem Solving Laboratory',
+  awards: 'Awards',
+  '1stPlaceUffMarathon': `First place in the Programming Marathon during the Computing Week event at the Federal Fluminense University`,
+  '3rdPlaceUffMarathon': `Third place in the Programming Marathon during the Computing Week event at the Federal Fluminense University`,
+  '2ndPlaceVisagioMarathon': `Second place in the Programming Marathon at Visagio's 2016 Programming Marathon`,
   tfsDescription: `- Successfully completed various freelance projects, ranging from Full Stack web applications to MMORPG private servers with tens of thousands of players, gaining expertise in debugging multithreaded servers, reverse engineering game network protocols, and DLL injection.
 - Gained valuable experience as a software developer by actively contributing to an open-source project with a thriving community.
 - Benefitted greatly from diverse interactions with individuals from various backgrounds and skill sets while working on the implementation of a popular game server written in C++. The server incorporates a Lua-based scripting system.
@@ -56,7 +68,6 @@ The project is still ongoing and continues to experience growth, with thousands 
 - Designing and developing APIs to facilitate data exchange and integration with external systems.
 - Collaborating with stakeholders to gather requirements, identify opportunities for improvement, and propose innovative solutions.
 - Participating in agile development processes, including sprint planning, daily stand-ups, and retrospective meetings.`,
-  sideProjects: 'Side Projects',
   mkaloDevDescription: `- Developed my personal website using the RedwoodJS framework with React, TypeScript, Tailwind, GraphQL and Prisma.
 - Integrated the website with Vercel deploying it to the edge, providing a fast and reliable experience to the users.
 - Implemented a PDF renderer to generate a resume PDF dynamically from the website using Puppeteer, deployed to AWS Elastic Beanstalk.`,

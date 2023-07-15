@@ -19,6 +19,18 @@ module.exports = {
   intermediate: 'Intermediário',
   basic: 'Básico',
   workHistory: 'Histórico de Trabalho',
+  sideProjects: 'Projetos Paralelos',
+  education: 'Educação',
+  present: 'Presente',
+  bachelorDegree: 'Bacharel em Ciência da Computação',
+  myHighSchool: 'Escola Pública Herbert de Souza',
+  highSchool: 'Ensino Médio',
+  teachingAssistant: 'Monitor de Ensino',
+  problemSolvingLab: 'Laboratório de Solução de Problemas',
+  awards: 'Prêmios',
+  '1stPlaceUffMarathon': `Primeiro lugar na Maratona de Programação durante o evento da Semana de Computação na Universidade Federal Fluminense`,
+  '3rdPlaceUffMarathon': `Terceiro lugar na Maratona de Programação durante o evento da Semana de Computação na Universidade Federal Fluminense`,
+  '2ndPlaceVisagioMarathon': `Segundo lugar na Maratona de Programação na Maratona de Programação da Visagio em 2016`,
   tfsDescription: `- Conclui com sucesso vários projetos freelancers, desde aplicações web Full Stack até servidores privados de MMORPG com dezenas de milhares de jogadores, adquirindo expertise em depuração de servidores multithreaded, engenharia reversa de protocolos de rede de jogos e injeção de DLL.
 - Obtive experiência valiosa como desenvolvedor de software ao contribuir ativamente para um projeto de código aberto com uma comunidade próspera.
 - Beneficiei grandemente das interações diversificadas com pessoas de diferentes origens e conjuntos de habilidades ao trabalhar na implementação de um servidor de jogo popular escrito em C++. O servidor incorpora um sistema de script baseado em Lua.
@@ -56,7 +68,6 @@ O projeto ainda está em andamento e continua crescendo, com milhares de usuári
 - Projetando e desenvolvendo APIs para facilitar a troca de dados e integração com sistemas externos.
 - Colaborando com as partes interessadas para reunir requisitos, identificar oportunidades de melhoria e propor soluções inovadoras.
 - Participando de processos de desenvolvimento ágil, incluindo planejamento de sprint, reuniões diárias de alinhamento e reuniões retrospectivas.`,
-  sideProjects: 'Projetos Paralelos',
   mkaloDevDescription: `- Desenvolvi meu site pessoal usando o framework RedwoodJS com React, Typescript, Tailwind, GraphQL e Prisma.
 - Integrei o site com a Vercel, fazendo o deploy na edge, proporcionando uma experiência rápida e confiável para os usuários.
 - Implementei um renderizador de PDF para gerar um currículo em PDF dinamicamente a partir do site usando o Puppeteer, com deploy na AWS Elastic Beanstalk.`,
@@ -66,7 +77,7 @@ O projeto ainda está em andamento e continua crescendo, com milhares de usuári
 - Escrito em TypeScript e utilizando MongoDB para armazenamento e Express.js para a API.
 - WeaaBotTwitch, o bot para Twitch que se conectaria aos canais IRC para interagir com os usuários no Twitch.
 - WeaaBotWeb, o site do bot para mostrar estatísticas e permitir que o usuário faça login/registo.`,
-  electronPixijsTypescriptDescription: `- Desenvolvi um projeto modelo que continha tudo para começar a construir um jogo para a web e desktop usando Typescript, Electron e PixiJS.`,
+  electronPixijsTypeScriptDescription: `- Desenvolvi um projeto modelo que continha tudo para começar a construir um jogo para a web e desktop usando Typescript, Electron e PixiJS.`,
   zippiaCloneDescription: `- Desenvolvi um clone do site Zippia usando Next.js, React, TypeScript, Tailwind e Axios.`,
   benchmarkNodeNativeAddonsDescription: `- Desenvolvi um projeto para comparar a performance de Node.js com C++ usando modules nativos e JavaScript puro.`,
 };

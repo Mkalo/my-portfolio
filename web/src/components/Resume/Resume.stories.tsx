@@ -91,5 +91,19 @@ export default {
         ],
       },
     ],
+    educationHistory: [
+      {
+        institution: 'Universidade Federal Fluminense',
+        degree: 'Bachelor of Computer Science',
+        startDate: new Date('2013-03-01'),
+        endDate: new Date('2018-12-01'),
+      },
+    ],
+    awards: [
+      {
+        name: 'Award Name',
+        year: 2021,
+      },
+    ],
   },
 } as ComponentMeta<typeof Resume>;

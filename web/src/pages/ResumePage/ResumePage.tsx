@@ -151,12 +151,12 @@ const ResumePage = ({
             },
             {
               company: 'Universidade Federal Fluminense',
-              position: 'Teaching Assistant',
+              position: t('teachingAssistant'),
               startDate: new Date('2017-01-01'),
               endDate: new Date('2018-11-01'),
               projects: [
                 {
-                  name: 'Problem Solving Laboratory Teaching Assistant',
+                  name: t('problemSolvingLab'),
                   description: t('taDescription'),
                   tags: ['Problem Solving', 'Python'],
                 },
@@ -254,6 +254,34 @@ const ResumePage = ({
                 'Webpack',
                 'Gulp',
               ],
+            },
+          ]}
+          educationHistory={[
+            {
+              institution: 'Universidade Federal Fluminense',
+              degree: t('bachelorDegree'),
+              startDate: new Date('2016-09-01'),
+              endDate: new Date('2021-06-01'),
+            },
+            {
+              institution: t('myHighSchool'),
+              degree: t('highSchool'),
+              startDate: new Date('2013-01-01'),
+              endDate: new Date('2015-12-01'),
+            },
+          ]}
+          awards={[
+            {
+              name: t('3rdPlaceUffMarathon'),
+              year: 2018,
+            },
+            {
+              name: t('1stPlaceUffMarathon'),
+              year: 2017,
+            },
+            {
+              name: t('2ndPlaceVisagioMarathon'),
+              year: 2016,
             },
           ]}
         />

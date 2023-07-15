@@ -27,7 +27,7 @@ const WorkHistoryItem = ({
   endDate,
   projects,
 }: IWorkHistoryItemProps) => {
-  const { i18n } = useTranslation('home');
+  const { t, i18n } = useTranslation();
   const [ReactMarkdownComponent, setReactMarkdownComponent] =
     useState<LazyExoticComponent<typeof ReactMarkdown> | null>(null);
 
@@ -47,9 +47,9 @@ const WorkHistoryItem = ({
               {company}
             </span>
           </div>
-          <div className="flex w-fit flex-col text-zinc-500 dark:text-zinc-400">
-            <div className="flex h-fit flex-shrink-0 items-center gap-1">
-              <span className="text-xs font-semibold first-letter:capitalize">
+          <div className="flex w-fit flex-col gap-0.5 text-zinc-500 dark:text-zinc-400">
+            <div className="flex h-fit flex-shrink-0 items-center gap-1 text-xs font-semibold">
+              <span className="first-letter:capitalize">
                 {startDate.toLocaleString(i18n.language, {
                   month: 'long',
                   year: 'numeric',
@@ -57,12 +57,12 @@ const WorkHistoryItem = ({
                 })}
               </span>
               {' - '}
-              <span className="text-xs font-semibold first-letter:capitalize">
+              <span className="first-letter:capitalize">
                 {endDate?.toLocaleString(i18n.language, {
                   month: 'long',
                   year: 'numeric',
                   timeZone: 'UTC',
-                }) ?? 'Present'}
+                }) ?? t('present')}
               </span>
             </div>
             <span className="self-start text-xs font-semibold lg:self-end">

@@ -13,7 +13,13 @@ import LibraryOutline from 'src/images/library-outline.svg';
 import LocationOutline from 'src/images/location-outline.svg';
 import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
+import SchoolOutline from 'src/images/school-outline.svg';
+import ThrophyOutline from 'src/images/trophy-outline.svg';
 
+import AwardItem, { IAwartItemProps } from '../AwardItem/AwardItem';
+import EducationHistoryItem, {
+  IEducationHistoryItemProps,
+} from '../EducationHistoryItem/EducationHistoryItem';
 import ProfilePicture from '../ProfilePicture/ProfilePicture';
 import SideProjectItem, {
   ISideProjectItemProps,
@@ -36,6 +42,8 @@ interface ResumeProps {
   additionalSkills: string[];
   workHistory: IWorkHistoryItemProps[];
   sideProjects: ISideProjectItemProps[];
+  educationHistory: IEducationHistoryItemProps[];
+  awards: IAwartItemProps[];
   showDownloadButton?: boolean;
 }
 
@@ -52,6 +60,8 @@ const Resume = ({
   additionalSkills,
   workHistory,
   sideProjects,
+  educationHistory,
+  awards,
   showDownloadButton = false,
 }: ResumeProps) => {
   const { t, i18n } = useTranslation();
@@ -109,7 +119,6 @@ const Resume = ({
           </div>
         </hgroup>
       </header>
-
       <hr className="my-4 sm:my-8" />
       <section className="flex flex-col gap-4 sm:flex-row sm:gap-8">
         <div className="flex items-center gap-3">
@@ -138,7 +147,7 @@ const Resume = ({
           <BriefcaseOutline className="h-6 w-6" aria-label="briefcase" />
           <h2 className="text-xl font-semibold">{t('workHistory')}</h2>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex w-full flex-col gap-6">
           {workHistory.map((item) => (
             <WorkHistoryItem
               key={`${item.company}-${item.position}`}
@@ -153,9 +162,36 @@ const Resume = ({
           <FileTrayFullOutline className="h-6 w-6" aria-label="file tray" />
           <h2 className="text-xl font-semibold">{t('sideProjects')}</h2>
         </div>
-        <div className="flex flex-col gap-6">
+        <div className="flex w-full flex-col gap-6">
           {sideProjects.map((item) => (
             <SideProjectItem key={item.name} {...item} />
+          ))}
+        </div>
+      </section>
+      <hr className="my-4 sm:my-8" />
+      <section className="flex flex-col gap-4 lg:flex-row">
+        <div className="flex h-fit w-[250px] shrink-0 items-center gap-3">
+          <SchoolOutline className="h-6 w-6" aria-label="school" />
+          <h2 className="text-xl font-semibold">{t('education')}</h2>
+        </div>
+        <div className="flex w-full flex-col gap-6">
+          {educationHistory.map((item) => (
+            <EducationHistoryItem
+              key={`${item.institution}-${item.degree}`}
+              {...item}
+            />
+          ))}
+        </div>
+      </section>
+      <hr className="my-4 sm:my-8" />
+      <section className="flex flex-col gap-4 lg:flex-row">
+        <div className="flex h-fit w-[250px] shrink-0 items-center gap-3">
+          <ThrophyOutline className="h-6 w-6" aria-label="trophies" />
+          <h2 className="text-xl font-semibold">{t('awards')}</h2>
+        </div>
+        <div className="flex w-full flex-col gap-6">
+          {awards.map((item) => (
+            <AwardItem key={item.name} {...item} />
           ))}
         </div>
       </section>

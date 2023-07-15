@@ -22,6 +22,8 @@ describe('Resume', () => {
           additionalSkills={['AWS', 'Git', 'Docker']}
           workHistory={[]}
           sideProjects={[]}
+          educationHistory={[]}
+          awards={[]}
         />
       );
     }).not.toThrow();
