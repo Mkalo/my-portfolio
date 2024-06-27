@@ -14,7 +14,7 @@ module.exports = {
   level: 'Level',
   additionalSkills: 'Additional skills',
   description:
-    'Experienced Software Engineer with a focus on web development, bringing 7 years of industry experience to the table. Proficient in Node.js, TypeScript, React, Vue.js, Lua, and C++, I possess a strong drive and ambition to utilize my skills in creative problem-solving. My goal is to design, develop, and optimize systems and software that drive growth and sustainability. With a proven track record, I confidently approach complex challenges, delivering innovative solutions of the highest quality.',
+    'Experienced Software Engineer with a focus on web development, bringing 8 years of industry experience to the table. Proficient in Node.js, TypeScript, React, Vue.js, Lua, and C++, I possess a strong drive and ambition to utilize my skills in creative problem-solving. My goal is to design, develop, and optimize systems and software that drive growth and sustainability. With a proven track record, I confidently approach complex challenges, delivering innovative solutions of the highest quality.',
   expert: 'Expert',
   intermediate: 'Intermediate',
   basic: 'Basic',

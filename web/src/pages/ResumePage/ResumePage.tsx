@@ -24,15 +24,15 @@ const ResumePage = ({
           formattedCellphone="+55 (21) 99695-4269"
           email="matt@mkalo.dev"
           location="Niterói, RJ - Brazil"
-          yearsOfExperience={7}
+          yearsOfExperience={8}
           showDownloadButton={showDownloadButton}
           technicalSkills={[
-            { name: 'Node.js', years: 7, level: expert },
-            { name: 'TypeScript', years: 5, level: expert },
-            { name: 'JavaScript', years: 5, level: expert },
-            { name: 'HTML', years: 5, level: expert },
-            { name: 'CSS', years: 5, level: expert },
-            { name: 'React', years: 3, level: expert },
+            { name: 'Node.js', years: 8, level: expert },
+            { name: 'TypeScript', years: 6, level: expert },
+            { name: 'JavaScript', years: 6, level: expert },
+            { name: 'HTML', years: 6, level: expert },
+            { name: 'CSS', years: 6, level: expert },
+            { name: 'React', years: 4, level: expert },
             { name: 'C++', years: 3, level: intermediate },
             { name: 'Lua', years: 3, level: intermediate },
             { name: 'Vue.js', years: 2, level: intermediate },
@@ -44,6 +44,8 @@ const ResumePage = ({
             'AWS',
             'Git',
             'Docker',
+            'Kubernetes',
+            'Terraform',
             'MySQL',
             'PostgreSQL',
             'MongoDB',
@@ -90,21 +92,26 @@ const ResumePage = ({
               startDate: new Date('2023-02-01'),
               projects: [
                 {
-                  name: 'Insight Partners - Portco Platform',
+                  name: 'Lead Developer - Insight Partners',
                   description: t('insightDescription'),
                   tags: [
                     'Next.js',
                     'Nest.js',
                     'Tailwind',
                     'Prisma',
+                    'PostgreSQL',
                     'React Query',
                     'AWS',
                     'S3',
                     'CloudFront',
                     'SES',
                     'EKS',
+                    'Lambda',
+                    'Serverless',
+                    'SQS',
                     'Docker',
                     'Kubernetes',
+                    'Terraform',
                     'Node.js',
                     'Axios',
                     'MUI',

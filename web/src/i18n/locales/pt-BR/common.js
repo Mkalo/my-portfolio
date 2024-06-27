@@ -14,7 +14,7 @@ module.exports = {
   level: 'Nível',
   additionalSkills: 'Competências adicionais',
   description:
-    'Engenheiro de Software experiente, com foco no desenvolvimento web, trazendo 7 anos de experiência na indústria. Proficiente em Node.js, Typescript, React, Vue.js, Lua e C++, possuo uma forte motivação e ambição para utilizar minhas habilidades em solução criativa de problemas. Meu objetivo é projetar, desenvolver e otimizar sistemas e software que impulsionem o crescimento e a sustentabilidade. Com um histórico comprovado, abordo desafios complexos com confiança, entregando soluções inovadoras da mais alta qualidade.',
+    'Engenheiro de Software experiente, com foco no desenvolvimento web, trazendo 8 anos de experiência na indústria. Proficiente em Node.js, Typescript, React, Vue.js, Lua e C++, possuo uma forte motivação e ambição para utilizar minhas habilidades em solução criativa de problemas. Meu objetivo é projetar, desenvolver e otimizar sistemas e software que impulsionem o crescimento e a sustentabilidade. Com um histórico comprovado, abordo desafios complexos com confiança, entregando soluções inovadoras da mais alta qualidade.',
   expert: 'Especialista',
   intermediate: 'Intermediário',
   basic: 'Básico',
