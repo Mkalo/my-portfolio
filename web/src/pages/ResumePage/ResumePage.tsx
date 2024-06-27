@@ -279,6 +279,10 @@ const ResumePage = ({
           ]}
           awards={[
             {
+              name: t('1stPlaceIPHackathon'),
+              year: 2023,
+            },
+            {
               name: t('3rdPlaceUffMarathon'),
               year: 2018,
             },

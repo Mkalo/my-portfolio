@@ -28,6 +28,7 @@ module.exports = {
   teachingAssistant: 'Teaching Assistant',
   problemSolvingLab: 'Problem Solving Laboratory',
   awards: 'Awards',
+  '1stPlaceIPHackathon': `First place in the Insight Partners Hackathon`,
   '1stPlaceUffMarathon': `First place in the Programming Marathon during the Computing Week event at the Federal Fluminense University`,
   '3rdPlaceUffMarathon': `Third place in the Programming Marathon during the Computing Week event at the Federal Fluminense University`,
   '2ndPlaceVisagioMarathon': `Second place in the Programming Marathon at Visagio's 2016 Programming Marathon`,

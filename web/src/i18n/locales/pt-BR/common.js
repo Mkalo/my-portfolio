@@ -28,6 +28,7 @@ module.exports = {
   teachingAssistant: 'Monitor de Ensino',
   problemSolvingLab: 'Laboratório de Solução de Problemas',
   awards: 'Prêmios',
+  '1stPlaceIPHackathon': `Primeiro lugar no Hackathon da Insight Partners`,
   '1stPlaceUffMarathon': `Primeiro lugar na Maratona de Programação durante o evento da Semana de Computação na Universidade Federal Fluminense`,
   '3rdPlaceUffMarathon': `Terceiro lugar na Maratona de Programação durante o evento da Semana de Computação na Universidade Federal Fluminense`,
   '2ndPlaceVisagioMarathon': `Segundo lugar na Maratona de Programação na Maratona de Programação da Visagio em 2016`,
