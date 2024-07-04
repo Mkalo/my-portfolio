@@ -3,7 +3,7 @@ import puppeteer from 'puppeteer';
 
 const RESUME_ENDPOINT = 'https://mkalo.dev/resume';
 
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 3000;
 const app = express();
 const route = Router();
 
