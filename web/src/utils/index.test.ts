@@ -22,7 +22,7 @@ describe('utils', () => {
 
     it('should default to current date if the second argument is not provided', () => {
       const firstDate = new Date('2022-01-01');
-      const currentDate = new Date();
+      const currentDate = new Date('2023-07-01');
 
       const spy = jest
         .spyOn(global, 'Date')
