@@ -74,9 +74,9 @@ const Resume = ({
           <a
             role="button"
             className="absolute right-0 top-0 flex items-center rounded-full p-2 align-middle hover:bg-zinc-200 dark:hover:bg-zinc-700"
-            href={`http://render-resume.eba-bx2pakaj.us-east-1.elasticbeanstalk.com/?lng=${
-              i18n.language
-            }${theme === 'dark' ? '&darkMode=true' : ''}`}
+            href={`https://render-resume.fly.dev/?lng=${i18n.language}${
+              theme === 'dark' ? '&darkMode=true' : ''
+            }`}
             target="_blank"
             rel="noreferrer"
             aria-label="download resume"

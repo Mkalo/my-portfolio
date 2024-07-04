@@ -12,6 +12,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 async function renderResume(language: string, darkMode?: boolean) {
   const browser = await puppeteer.launch({
     headless: true,
+    args: ['--no-sandbox'],
   });
 
   const page = await browser.newPage();
