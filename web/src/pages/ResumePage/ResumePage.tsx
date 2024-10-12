@@ -87,9 +87,22 @@ const ResumePage = ({
           ]}
           workHistory={[
             {
+              company: 'Xometry',
+              position: 'Senior Software Engineer',
+              startDate: new Date('2024-10-01'),
+              projects: [
+                {
+                  name: 'Campaign Management App - Testing Suite',
+                  description: t('xometryDescription'),
+                  tags: ['Jest', 'React Testing Library', 'MSW', 'GraphQL'],
+                },
+              ],
+            },
+            {
               company: 'Blue Orange Digital',
-              position: 'Senior Full Stack Engineer',
+              position: 'Full Stack Engineer',
               startDate: new Date('2023-02-01'),
+              endDate: new Date('2024-09-30'),
               projects: [
                 {
                   name: 'Lead Developer - Insight Partners',

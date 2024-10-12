@@ -69,6 +69,8 @@ The project is still ongoing and continues to experience growth, with thousands 
 - Designing and developing APIs to facilitate data exchange and integration with external systems.
 - Collaborating with stakeholders to gather requirements, identify opportunities for improvement, and propose innovative solutions.
 - Participating in agile development processes, including sprint planning, daily stand-ups, and retrospective meetings.`,
+  xometryDescription: `- Xometry is a leading digital marketplace for on-demand manufacturing services, connecting customers with a global network of manufacturing partners to streamline the production process and deliver high-quality parts.
+- Implementing scenario and unit tests for the Campaign Management App using Jest, React Testing Library, MSW, and GraphQL mocks.`,
   mkaloDevDescription: `- Developed my personal website using the RedwoodJS framework with React, TypeScript, Tailwind, GraphQL and Prisma.
 - Integrated the website with Vercel deploying it to the edge, providing a fast and reliable experience to the users.
 - Implemented a PDF renderer to generate a resume PDF dynamically from the website using Puppeteer, deployed to AWS Elastic Beanstalk.`,

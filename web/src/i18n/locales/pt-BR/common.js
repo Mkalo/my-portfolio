@@ -1,3 +1,5 @@
+const { xometryDescription } = require('../en/common');
+
 // eslint-disable-next-line no-undef
 module.exports = {
   app_title: 'Portfólio do Matheus Costa',
@@ -69,6 +71,8 @@ O projeto ainda está em andamento e continua crescendo, com milhares de usuári
 - Projetando e desenvolvendo APIs para facilitar a troca de dados e integração com sistemas externos.
 - Colaborando com as partes interessadas para reunir requisitos, identificar oportunidades de melhoria e propor soluções inovadoras.
 - Participando de processos de desenvolvimento ágil, incluindo planejamento de sprint, reuniões diárias de alinhamento e reuniões retrospectivas.`,
+  xometryDescription: `- A Xometry é um marketplace digital líder em serviços de manufatura sob demanda, conectando clientes a uma rede global de parceiros de manufatura para agilizar o processo de produção e entregar peças de alta qualidade.
+- Implementação de testes de cenário e testes unitários para o aplicativo de Gestão de Campanhas usando Jest, React Testing Library, MSW e mocks de GraphQL.`,
   mkaloDevDescription: `- Desenvolvi meu site pessoal usando o framework RedwoodJS com React, Typescript, Tailwind, GraphQL e Prisma.
 - Integrei o site com a Vercel, fazendo o deploy na edge, proporcionando uma experiência rápida e confiável para os usuários.
 - Implementei um renderizador de PDF para gerar um currículo em PDF dinamicamente a partir do site usando o Puppeteer, com deploy na AWS Elastic Beanstalk.`,

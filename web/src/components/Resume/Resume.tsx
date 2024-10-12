@@ -9,7 +9,9 @@ import CalendarOutline from 'src/images/calendar-outline.svg';
 import CallOutline from 'src/images/call-outline.svg';
 import DownloadOutline from 'src/images/download-outline.svg';
 import FileTrayFullOutline from 'src/images/file-tray-full-outline.svg';
+import GithubIcon from 'src/images/github.svg';
 import LibraryOutline from 'src/images/library-outline.svg';
+import LinkedinIcon from 'src/images/linkedin.svg';
 import LocationOutline from 'src/images/location-outline.svg';
 import MailOutline from 'src/images/mail-outline.svg';
 import ProfileImage from 'src/images/profile.webp';
@@ -90,8 +92,34 @@ const Resume = ({
           </div>
         </div>
         <hgroup className="flex flex-col">
-          <h2 className="text-2xl font-semibold">{name}</h2>
-          <p className="mb-4 font-medium">{position}</p>
+          <div className="mb-4 flex flex-col">
+            <div className="flex items-center gap-3">
+              <h2 className="text-2xl font-semibold">{name}</h2>
+              <div className="flex items-center gap-1">
+                <a
+                  href="https://www.linkedin.com/in/matheus-costa-ab44151bb"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedinIcon
+                    className="h-6 w-6 text-black dark:text-white"
+                    aria-label="linkedin"
+                  />
+                </a>
+                <a
+                  href="https://github.com/Mkalo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GithubIcon
+                    className="h-6 w-6 text-black dark:text-white"
+                    aria-label="github"
+                  />
+                </a>
+              </div>
+            </div>
+            <p className="font-medium">{position}</p>
+          </div>
           <p className="mb-4">{description}</p>
           <div className="flex w-fit flex-wrap gap-x-6 gap-y-2 rounded bg-zinc-200 p-4 dark:bg-zinc-900">
             <div className="flex flex-shrink-0 items-center gap-2">
