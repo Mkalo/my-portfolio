@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <>
       <MetaTags
-        title="Home"
-        description="Home page"
+        title="Matheus Costa's Portfolio"
+        description="Senior Software Engineer | 8+ Years in Software Development | Node.js, TypeScript, React, Vue.js, AWS, C++ | Driving Innovation and Scalable Solutions"
         ogContentUrl="/profile.webp"
       />
       <div className="flex items-center">
